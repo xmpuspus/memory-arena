@@ -1,0 +1,102 @@
+{
+  "strategy": "memori",
+  "corpus": "longmemeval-s",
+  "status": "ok",
+  "n_seeds": 1,
+  "n_questions": 16,
+  "n_bootstrap": 5000,
+  "bootstrap_method": "non_parametric_question_level",
+  "mean_accuracy": 0.014062500000000002,
+  "ci_low_95": 0.004687500000000001,
+  "ci_high_95": 0.025,
+  "accuracy": 0.014062500000000002,
+  "accuracy_ci": 0.01015625,
+  "ci_low": 0.004687500000000001,
+  "ci_high": 0.025,
+  "accuracy_per_seed": [
+    0.0140625
+  ],
+  "total_cost_usd": 0.012405,
+  "total_cost_ci": 0.0,
+  "avg_recall_latency_ms": 2472.4149271278293,
+  "avg_recall_latency_ci_ms": 0.0,
+  "mean_session_recall_at_k": null,
+  "mean_session_recall_at_k_ci": null,
+  "mean_session_hit_at_k": null,
+  "mean_session_hit_at_k_ci": null,
+  "ingest_failure_rate": 0.0,
+  "questions_evaluated_per_seed": [
+    16
+  ],
+  "accuracy_by_category": {
+    "information_extraction": {
+      "accuracy": 0.0,
+      "accuracy_ci": 0.0,
+      "ci_low_95": 0.0,
+      "ci_high_95": 0.0,
+      "n": 4
+    },
+    "multi_session_reasoning": {
+      "accuracy": 0.0125,
+      "accuracy_ci": 0.018750000000000003,
+      "ci_low_95": 0.0,
+      "ci_high_95": 0.037500000000000006,
+      "n": 4
+    },
+    "temporal": {
+      "accuracy": 0.018750000000000003,
+      "accuracy_ci": 0.018750000000000003,
+      "ci_low_95": 0.0,
+      "ci_high_95": 0.037500000000000006,
+      "n": 4
+    },
+    "knowledge_update": {
+      "accuracy": 0.025,
+      "accuracy_ci": 0.025,
+      "ci_low_95": 0.0,
+      "ci_high_95": 0.05,
+      "n": 4
+    }
+  },
+  "metadata": {
+    "commit_sha": "d98e5776f0c491ff6fc34d57eb94efa644ec608f",
+    "started_utc": "2026-04-30T08:06:59.686116+00:00",
+    "host": "Darwin 25.3.0 (arm64)",
+    "python": "3.12.4",
+    "top_k": 5,
+    "top_k_normalized": true,
+    "seed": 0,
+    "models": {
+      "anthropic_generate": "claude-sonnet-4-6",
+      "anthropic_fast": "claude-haiku-4-5-20251001",
+      "anthropic_judge": "claude-opus-4-7",
+      "openai_generate": "gpt-4o",
+      "openai_fast": "gpt-4o-mini",
+      "openai_judge": "gpt-4o",
+      "embedding": "text-embedding-3-large"
+    },
+    "package_versions": {
+      "memory-arena": "0.1.5",
+      "anthropic": "0.42.0",
+      "openai": "2.24.0",
+      "chromadb": "0.5.23",
+      "neo4j": "5.27.0",
+      "fastapi": "0.115.6",
+      "pydantic": "2.10.4",
+      "rank-bm25": "0.2.2",
+      "tiktoken": "0.7.0",
+      "tenacity": "9.0.0",
+      "numpy": "2.4.4",
+      "scikit-learn": "1.8.0",
+      "mem0ai": "0.1.114",
+      "letta-client": "1.10.3",
+      "graphiti-core": "0.13.0",
+      "cognee": "1.0.3",
+      "langmem": "0.0.30",
+      "langgraph": "1.1.10",
+      "memori": "3.3.2",
+      "psycopg": "3.3.3",
+      "s3fs": "not-installed"
+    }
+  }
+}

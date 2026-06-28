@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest tests/ -v --ignore=tests/live
+      # Block em-dashes, en-dashes in narrative text, and the stale
+      # "16 architectures" phrase in user-facing markdown. Verbatim LLM
+      # output in docs/per-question-comparison.md is exempt.
+      - name: user-facing typography lint
+        run: python scripts/check_user_facing_typography.py
+
+      # pip-audit: fail on known CVEs in installed deps. Non-blocking initially
+      # so first-pass findings surface without blocking launch.
+      - name: pip-audit (CVE scan)
+        continue-on-error: true
+        run: |
+          pip install pip-audit
+          pip-audit --strict
+
+      # bandit: static analysis of memory_arena/ at medium-severity floor.
+      # Non-blocking initially to surface findings without blocking launch.
+      - name: bandit (Python SAST)
+        continue-on-error: true
+        run: |
+          pip install bandit
+          bandit -r memory_arena/ -ll
+
+  # gitleaks: scan repo for committed secrets. Hard fail on findings.
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - run: npx next build

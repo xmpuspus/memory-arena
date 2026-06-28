@@ -1,0 +1,1323 @@
+{
+  "strategy": "mem0",
+  "run_id": "8fe157a7",
+  "started_at": "2026-04-29T11:41:35.598827+00:00",
+  "ingest_records": [
+    {
+      "session_id": "sharegpt_yywfIrx_0",
+      "latency_ms": 511.60933391656727,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11KpyMGZcRWd4JK6mJ'}"
+    },
+    {
+      "session_id": "85a1be56_1",
+      "latency_ms": 276.35099994949996,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11MhadXSe6eTB9c97p'}"
+    },
+    {
+      "session_id": "sharegpt_Jcy1CVN_0",
+      "latency_ms": 244.74141700193286,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11NnZyjwQJv5BdBcLq'}"
+    },
+    {
+      "session_id": "answer_280352e9",
+      "latency_ms": 277.1603340515867,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11PuY7fEcPmUirzLSK'}"
+    },
+    {
+      "session_id": "db73b7e4_4",
+      "latency_ms": 368.00304194912314,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11R7DUtkpCHiCDQh1m'}"
+    },
+    {
+      "session_id": "sharegpt_5V5H2HN_0",
+      "latency_ms": 262.4911250313744,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11SeVbWM8aWSTR3Buf'}"
+    },
+    {
+      "session_id": "ultrachat_577747",
+      "latency_ms": 273.85091700125486,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11ToSka6FNMRBm3zTm'}"
+    },
+    {
+      "session_id": "answer_40a90d51",
+      "latency_ms": 267.91875006165355,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11Uw9zkSGotA93BBuB'}"
+    },
+    {
+      "session_id": "sharegpt_9MbC1u2_0",
+      "latency_ms": 450.8763749618083,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11W29LoMLoNSukHZQh'}"
+    },
+    {
+      "session_id": "ultrachat_122409",
+      "latency_ms": 244.22808398958296,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11XwjHq1gLuvBRwthc'}"
+    },
+    {
+      "session_id": "ultrachat_174711",
+      "latency_ms": 294.63775001931936,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11ZAA7vpsnkMKHqxvS'}"
+    },
+    {
+      "session_id": "answer_d61669c7",
+      "latency_ms": 272.3822919651866,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11aHsPeTQh3qLdS2mA'}"
+    },
+    {
+      "session_id": "5d522308_1",
+      "latency_ms": 282.9581249970943,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11bWYHuf8KkUcwswk9'}"
+    },
+    {
+      "session_id": "ultrachat_132201",
+      "latency_ms": 265.920624951832,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11chEVQMPCJdGvmLdW'}"
+    },
+    {
+      "session_id": "sharegpt_LG0uJvY_0",
+      "latency_ms": 1269.9170829728246,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11fGG9EbKS7wwBFr9s'}"
+    },
+    {
+      "session_id": "answer_355c48bb",
+      "latency_ms": 289.1740830382332,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11jLLeigEH48WebqDo'}"
+    },
+    {
+      "session_id": "f10be626",
+      "latency_ms": 243.29504102934152,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11kSJxgPn9uEZTdbLG'}"
+    },
+    {
+      "session_id": "b10c041b_2",
+      "latency_ms": 323.7170829670504,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11mV4qwt2kogsfkjRz'}"
+    },
+    {
+      "session_id": "750b437b_3",
+      "latency_ms": 276.784542016685,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11nwP2UgV4CAUDgsGR'}"
+    },
+    {
+      "session_id": "answer_afa9873b_2",
+      "latency_ms": 365.83700007759035,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11p7KdbYDHa6k6gsmW'}"
+    },
+    {
+      "session_id": "answer_afa9873b_3",
+      "latency_ms": 245.272749918513,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11qcNEoaZJvE7URx6G'}"
+    },
+    {
+      "session_id": "answer_afa9873b_1",
+      "latency_ms": 277.6557080214843,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11rk5aHxKtCtCWZsxs'}"
+    },
+    {
+      "session_id": "0bab76de",
+      "latency_ms": 267.24679092876613,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11suXGEEFpix6G5nDf'}"
+    },
+    {
+      "session_id": "5459ee85",
+      "latency_ms": 273.5292910365388,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11u4j2JL4EgoZrDR9a'}"
+    },
+    {
+      "session_id": "sharegpt_89M8Aiz_0",
+      "latency_ms": 509.4762500375509,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11vEvVHqQAKjkUfv7a'}"
+    },
+    {
+      "session_id": "answer_ec904b3c_1",
+      "latency_ms": 316.03516603354365,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11xV7JE9ePtuLgKnFG'}"
+    },
+    {
+      "session_id": "answer_ec904b3c_4",
+      "latency_ms": 268.9244579523802,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11yfYvtusRmUhk5Fd2'}"
+    },
+    {
+      "session_id": "answer_ec904b3c_3",
+      "latency_ms": 285.5467910412699,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY11zuxMt3frkdGbGDF2'}"
+    },
+    {
+      "session_id": "answer_ec904b3c_2",
+      "latency_ms": 417.33187495265156,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY122ANKhk2ZhAVhXLU9'}"
+    },
+    {
+      "session_id": "ultrachat_566770",
+      "latency_ms": 593.6452080495656,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY124QoDuDiAEvTXEYS7'}"
+    },
+    {
+      "session_id": "answer_593bdffd_4",
+      "latency_ms": 266.91783405840397,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY126TaSh4FAyunpWGZW'}"
+    },
+    {
+      "session_id": "0cd57281_1",
+      "latency_ms": 274.73620895761997,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY127bJ1i6EYiJBZXibR'}"
+    },
+    {
+      "session_id": "answer_593bdffd_1",
+      "latency_ms": 250.6635420722887,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY128i1uQfzfp9jkDJjF'}"
+    },
+    {
+      "session_id": "answer_593bdffd_3",
+      "latency_ms": 300.99908309057355,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY129xg2Wm3Q8omgtKC3'}"
+    },
+    {
+      "session_id": "answer_593bdffd_2",
+      "latency_ms": 301.3349589891732,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12BEKhLYwu7ewhEM62'}"
+    },
+    {
+      "session_id": "sharegpt_esZWTJv_8",
+      "latency_ms": 275.0625420594588,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12CSVcFm7fHyoszd55'}"
+    },
+    {
+      "session_id": "ultrachat_105359",
+      "latency_ms": 478.12812495976686,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12DXUzxxP5cvkf8KFr'}"
+    },
+    {
+      "session_id": "ultrachat_431538",
+      "latency_ms": 281.5039169508964,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12FjSUbGa6Ab4Rrg6P'}"
+    },
+    {
+      "session_id": "answer_a8b4290f_3",
+      "latency_ms": 277.94654096942395,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12Govr3fkSAedexUX8'}"
+    },
+    {
+      "session_id": "answer_a8b4290f_1",
+      "latency_ms": 248.04283294361085,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12Hy8NjoErrJrp6XkU'}"
+    },
+    {
+      "session_id": "answer_a8b4290f_2",
+      "latency_ms": 266.3221249822527,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12K2Nw5C8ABq6opNVW'}"
+    },
+    {
+      "session_id": "f04fae0a",
+      "latency_ms": 270.7158330595121,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12LDZdXioeCgDF41sL'}"
+    },
+    {
+      "session_id": "ultrachat_78027",
+      "latency_ms": 390.7935000024736,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12Mf8UPLcx5ACRiW6F'}"
+    },
+    {
+      "session_id": "91b3b8e0_1",
+      "latency_ms": 279.4027499621734,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12P5D37NYz8WXwyReC'}"
+    },
+    {
+      "session_id": "answer_d00ba6d0_1",
+      "latency_ms": 270.7277910085395,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12QFedcQXVoqfANUoV'}"
+    },
+    {
+      "session_id": "answer_d00ba6d0_2",
+      "latency_ms": 274.6066249674186,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12RRMBFp5yacfHZ6Ep'}"
+    },
+    {
+      "session_id": "sharegpt_V3dAgEu_0",
+      "latency_ms": 274.31545802392066,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12SbYXVHjq6GwPSoTW'}"
+    },
+    {
+      "session_id": "ultrachat_308848",
+      "latency_ms": 269.34637501835823,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12TiG653Z3Sdxug2NH'}"
+    },
+    {
+      "session_id": "sharegpt_vonEwUo_17",
+      "latency_ms": 248.6973749473691,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12UsDQXfUh9dHqNLQq'}"
+    },
+    {
+      "session_id": "answer_3e9fce53_1",
+      "latency_ms": 276.49829199071974,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12VyhB8LJjRy5G38Rn'}"
+    },
+    {
+      "session_id": "answer_3e9fce53_2",
+      "latency_ms": 466.15687501616776,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12XQGF3GckSEaqStxZ'}"
+    },
+    {
+      "session_id": "answer_3e9fce53_3",
+      "latency_ms": 261.18766609579325,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12Z6DghxkKE6DiVcpT'}"
+    },
+    {
+      "session_id": "ultrachat_84486",
+      "latency_ms": 244.35554107185453,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12aBwgRdzZhaxCw5bd'}"
+    },
+    {
+      "session_id": "ultrachat_230339",
+      "latency_ms": 280.7463330682367,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12bEwqbuARvXLXgc6N'}"
+    },
+    {
+      "session_id": "ultrachat_270411",
+      "latency_ms": 239.28079206962138,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12cRPTxtBZpUxGn1ow'}"
+    },
+    {
+      "session_id": "answer_0b4a8adc_1",
+      "latency_ms": 285.84662510547787,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12dUdxNvPQCRJdAXgy'}"
+    },
+    {
+      "session_id": "53949711_2",
+      "latency_ms": 252.90254200808704,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12egpQDMaMQLpU1cFj'}"
+    },
+    {
+      "session_id": "sharegpt_5Rpp72b_148",
+      "latency_ms": 275.1768750604242,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12fqXL6K9tsDqctYzK'}"
+    },
+    {
+      "session_id": "4bf66c38_2",
+      "latency_ms": 518.1982079520822,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12hWEVSAKJshnn8gtw'}"
+    },
+    {
+      "session_id": "answer_4bfcc250_4",
+      "latency_ms": 270.32725000754,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12jEfFDgKerTqwmthP'}"
+    },
+    {
+      "session_id": "answer_4bfcc250_3",
+      "latency_ms": 355.4736250080168,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12kK9chSsUomC8kwwT'}"
+    },
+    {
+      "session_id": "answer_4bfcc250_2",
+      "latency_ms": 242.2437909990549,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12mqRt6HSuetqRVHzf'}"
+    },
+    {
+      "session_id": "answer_4bfcc250_1",
+      "latency_ms": 348.8830419955775,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12o4boDV54YvmR9dqc'}"
+    },
+    {
+      "session_id": "6387e969",
+      "latency_ms": 240.14116707257926,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12pLjxcmMpJDYFkVzw'}"
+    },
+    {
+      "session_id": "sharegpt_wsUEkMN_0",
+      "latency_ms": 257.65649997629225,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12qPFT7SHJvPRigDti'}"
+    },
+    {
+      "session_id": "e32f5666_3",
+      "latency_ms": 237.1648750267923,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12rVE8KuYcoDSQ53jy'}"
+    },
+    {
+      "session_id": "answer_a25d4a91_1",
+      "latency_ms": 241.5424999780953,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12sVkLxggjjQQK1CTY'}"
+    },
+    {
+      "session_id": "answer_a25d4a91_2",
+      "latency_ms": 429.2182920034975,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12tZF86o54vzAL3Mzf'}"
+    },
+    {
+      "session_id": "ultrachat_320783",
+      "latency_ms": 272.397082997486,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12vS7PcebLJNqtAutx'}"
+    },
+    {
+      "session_id": "sharegpt_I5HWvry_0",
+      "latency_ms": 280.6374169886112,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12wf2ihX8wmQcPXCQ8'}"
+    },
+    {
+      "session_id": "ultrachat_425346",
+      "latency_ms": 302.6635419810191,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12xpEQbVLKUKXrzT34'}"
+    },
+    {
+      "session_id": "answer_3f9693b7_1",
+      "latency_ms": 282.8559170011431,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY12z8rXuRiqVtHhBYbM'}"
+    },
+    {
+      "session_id": "answer_3f9693b7_2",
+      "latency_ms": 271.5351670049131,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY131K3iSW9EyK4KENRc'}"
+    },
+    {
+      "session_id": "062e9120_1",
+      "latency_ms": 251.69120798818767,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY132QHLur9Y53yrFdvQ'}"
+    },
+    {
+      "session_id": "sharegpt_kaEoitr_15",
+      "latency_ms": 269.4467499386519,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY133YEuteKDVF8MytLF'}"
+    },
+    {
+      "session_id": "47c5482a",
+      "latency_ms": 248.3635829994455,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY134cjaBuuHGBHeWYHb'}"
+    },
+    {
+      "session_id": "answer_0b1a0942_1",
+      "latency_ms": 250.70774997584522,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY135gyPuiyA2zdT1JG3'}"
+    },
+    {
+      "session_id": "answer_0b1a0942_2",
+      "latency_ms": 292.8158340509981,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY136qBVnMPbaoZ1kVFY'}"
+    },
+    {
+      "session_id": "ultrachat_218093",
+      "latency_ms": 283.98379089776427,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY1381NhG39QNDK638wq'}"
+    },
+    {
+      "session_id": "d36d11b9_2",
+      "latency_ms": 245.3137090196833,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY139EJBMVpDa96YitQE'}"
+    },
+    {
+      "session_id": "answer_3a6f1e82_1",
+      "latency_ms": 278.3417919417843,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY13AMGWrgodJF96WBsM'}"
+    },
+    {
+      "session_id": "answer_3a6f1e82_2",
+      "latency_ms": 263.7240419862792,
+      "tokens_used": 0,
+      "cost_usd": 0.0,
+      "facts_extracted": 0,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` and `top_p` cannot both be specified for this model. Please use only one.'}, 'request_id': 'req_011CaY13BXDC1dR8DZPiLVfu'}"
+    }
+  ],
+  "recall_records": [
+    {
+      "question_id": "e47becba",
+      "category": "information_extraction",
+      "answer": "I do not have that information. There are no memories in my retrieved context that mention your degree or graduation details.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the degree (Business Administration) and instead claims no information is available.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.007305,
+        "tokens_used": 255
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 3199.687708984129,
+      "cost_usd": 0.000576,
+      "tokens_used": 88,
+      "error": false
+    },
+    {
+      "question_id": "118b2229",
+      "category": "information_extraction",
+      "answer": "I do not have that information. No memories about your daily commute to work have been shared with me.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the commute duration stated in the reference.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.006645,
+        "tokens_used": 243
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 1759.6890419954434,
+      "cost_usd": 0.00057,
+      "tokens_used": 90,
+      "error": false
+    },
+    {
+      "question_id": "51a45a95",
+      "category": "information_extraction",
+      "answer": "I do not have that information.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate failed to provide the answer 'Target' given in the reference.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.00645,
+        "tokens_used": 222
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 3318.5415000189096,
+      "cost_usd": 0.000363,
+      "tokens_used": 81,
+      "error": false
+    },
+    {
+      "question_id": "58bf7951",
+      "category": "information_extraction",
+      "answer": "I do not have that information. There are no memories in my retrieved context mentioning a play or community theater visit.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the answer, stating it lacks information, while the reference specifies 'The Glass Menagerie'.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.008280000000000001,
+        "tokens_used": 272
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2403.95966602955,
+      "cost_usd": 0.000603,
+      "tokens_used": 93,
+      "error": false
+    },
+    {
+      "question_id": "0a995998",
+      "category": "multi_session_reasoning",
+      "answer": "I do not have that information. My retrieved memories don't contain any details about clothing items you need to pick up or return from a store.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the number 3 and instead claims no information is available.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.00696,
+        "tokens_used": 252
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 1959.672832977958,
+      "cost_usd": 0.000696,
+      "tokens_used": 104,
+      "error": false
+    },
+    {
+      "question_id": "6d550036",
+      "category": "multi_session_reasoning",
+      "answer": "I do not have that information. No memories have been provided to me that contain details about projects you have led or are currently leading.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.08000000000000002,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 10.0,
+        "judge_rationale": "The candidate fails to provide the numeric answer (2) and instead claims no information is available, contradicting the reference.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.0078,
+        "tokens_used": 260
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2049.86899998039,
+      "cost_usd": 0.0006479999999999999,
+      "tokens_used": 96,
+      "error": false
+    },
+    {
+      "question_id": "gpt4_59c863d7",
+      "category": "multi_session_reasoning",
+      "answer": "I do not have that information. My retrieved memories don't contain any details about model kits you have worked on or bought.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.04000000000000001,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 5.0,
+        "judge_rationale": "The candidate fails to provide any of the model kits or scales mentioned in the reference.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.008775,
+        "tokens_used": 361
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 3858.986582956277,
+      "cost_usd": 0.0006360000000000001,
+      "tokens_used": 96,
+      "error": false
+    },
+    {
+      "question_id": "b5ef892d",
+      "category": "multi_session_reasoning",
+      "answer": "I do not have that information. My memories don't contain any details about camping trips you took in the United States this year.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the duration (8 days) and instead claims no information is available.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.007124999999999999,
+        "tokens_used": 251
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2177.879292052239,
+      "cost_usd": 0.000648,
+      "tokens_used": 100,
+      "error": false
+    },
+    {
+      "question_id": "gpt4_59149c77",
+      "category": "temporal",
+      "answer": "I do not have that information. My retrieved memories don't contain any records of your visits to the Museum of Modern Art (MoMA) or the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the answer, claiming no information, which does not match the reference of 7-8 days.",
+        "temporal_correct": false,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.008565,
+        "tokens_used": 319
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2740.308790933341,
+      "cost_usd": 0.001005,
+      "tokens_used": 139,
+      "error": false
+    },
+    {
+      "question_id": "gpt4_f49edff3",
+      "category": "temporal",
+      "answer": "I do not have that information. My retrieved memories don't contain details about these three specific events or their chronological order.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.020000000000000004,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 5.0,
+        "judge_rationale": "The candidate fails to provide any of the three events or their order, contradicting the reference by claiming no information is available.",
+        "temporal_correct": false,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.008535000000000001,
+        "tokens_used": 317
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2904.4315830105916,
+      "cost_usd": 0.0007440000000000001,
+      "tokens_used": 136,
+      "error": false
+    },
+    {
+      "question_id": "71017276",
+      "category": "temporal",
+      "answer": "I do not have that information. There are no memories in my retrieved context about you meeting your aunt or receiving a crystal chandelier.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the answer (4) and instead claims no information is available.",
+        "temporal_correct": false,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.007095,
+        "tokens_used": 257
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 3038.613541983068,
+      "cost_usd": 0.000669,
+      "tokens_used": 103,
+      "error": false
+    },
+    {
+      "question_id": "b46e15ed",
+      "category": "temporal",
+      "answer": "I do not have that information. My retrieved memories don't contain any details about you participating in two charity events on consecutive days.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.04000000000000001,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 10.0,
+        "judge_rationale": "Candidate fails to provide the answer of 2, instead denying knowledge.",
+        "temporal_correct": false,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.00702,
+        "tokens_used": 252
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2162.018708069809,
+      "cost_usd": 0.00066,
+      "tokens_used": 104,
+      "error": false
+    },
+    {
+      "question_id": "6a1eabeb",
+      "category": "knowledge_update",
+      "answer": "I do not have that information. There are no memories available that mention a charity 5K run or your personal best time for one.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the time and incorrectly claims no information is available.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.007155,
+        "tokens_used": 265
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2035.457874997519,
+      "cost_usd": 0.0006720000000000001,
+      "tokens_used": 100,
+      "error": false
+    },
+    {
+      "question_id": "6aeb4375",
+      "category": "knowledge_update",
+      "answer": "I do not have that information. My retrieved memories don't contain any details about Korean restaurants you've tried in your city.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.04000000000000001,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 5.0,
+        "judge_rationale": "Candidate fails to provide the number and claims no information, contradicting the reference answer of four.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.00732,
+        "tokens_used": 256
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2969.757125014439,
+      "cost_usd": 0.0006180000000000001,
+      "tokens_used": 94,
+      "error": false
+    },
+    {
+      "question_id": "830ce83f",
+      "category": "knowledge_update",
+      "answer": "I do not have that information. No memories about Rachel or her relocation are available to me.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the answer, stating no information is available.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.00654,
+        "tokens_used": 240
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2099.220082978718,
+      "cost_usd": 0.000543,
+      "tokens_used": 89,
+      "error": false
+    },
+    {
+      "question_id": "852ce960",
+      "category": "knowledge_update",
+      "answer": "I do not have that information. There are no memories available that mention a mortgage pre-approval amount from Wells Fargo.",
+      "supporting_session_ids": [],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the pre-approval amount of $400,000, claiming no information is available.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.00753,
+        "tokens_used": 262
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2257.143958006054,
+      "cost_usd": 0.000663,
+      "tokens_used": 105,
+      "error": false
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-04-29T11:43:28.378036+00:00",
+  "accuracy": 0.013750000000000002,
+  "total_cost_usd": 0.010314000000000002,
+  "recall_cost_usd": 0.010314000000000002,
+  "avg_recall_latency_ms": 2558.4523306242772,
+  "abstention_f1": null,
+  "update_precision": 1.0,
+  "temporal_correctness": 0.0,
+  "mean_session_recall_at_k": 0.0,
+  "mean_session_hit_at_k": 0.0,
+  "top_k": 5,
+  "abstention_n": 0,
+  "update_n": 4,
+  "temporal_n": 4,
+  "accuracy_by_category": {
+    "information_extraction": {
+      "accuracy": 0.0,
+      "n": 4
+    },
+    "multi_session_reasoning": {
+      "accuracy": 0.030000000000000006,
+      "n": 4
+    },
+    "temporal": {
+      "accuracy": 0.015000000000000003,
+      "n": 4
+    },
+    "knowledge_update": {
+      "accuracy": 0.010000000000000002,
+      "n": 4
+    }
+  },
+  "questions_evaluated": 16
+}

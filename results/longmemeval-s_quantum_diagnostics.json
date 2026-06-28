@@ -1,0 +1,71 @@
+{
+  "corpus": "longmemeval-s",
+  "embedding_model": "text-embedding-3-large",
+  "embedding_dims": 3072,
+  "sample_turns": 256,
+  "pca_variance_curve": [
+    {
+      "n_qubits": 2,
+      "dims": 4,
+      "variance_explained": 0.1527,
+      "variance_lost": 0.8473
+    },
+    {
+      "n_qubits": 3,
+      "dims": 8,
+      "variance_explained": 0.2423,
+      "variance_lost": 0.7577
+    },
+    {
+      "n_qubits": 4,
+      "dims": 16,
+      "variance_explained": 0.3635,
+      "variance_lost": 0.6365
+    },
+    {
+      "n_qubits": 5,
+      "dims": 32,
+      "variance_explained": 0.5241,
+      "variance_lost": 0.4759
+    },
+    {
+      "n_qubits": 6,
+      "dims": 64,
+      "variance_explained": 0.7111,
+      "variance_lost": 0.2889
+    },
+    {
+      "n_qubits": 7,
+      "dims": 128,
+      "variance_explained": 0.8842,
+      "variance_lost": 0.1158
+    }
+  ],
+  "swap_error_vs_shots": [
+    {
+      "shots": 64,
+      "mean_abs_error": 0.0645,
+      "max_abs_error": 0.2702
+    },
+    {
+      "shots": 256,
+      "mean_abs_error": 0.0356,
+      "max_abs_error": 0.1102
+    },
+    {
+      "shots": 1024,
+      "mean_abs_error": 0.019,
+      "max_abs_error": 0.0693
+    },
+    {
+      "shots": 4096,
+      "mean_abs_error": 0.0097,
+      "max_abs_error": 0.0329
+    },
+    {
+      "shots": 16384,
+      "mean_abs_error": 0.0057,
+      "max_abs_error": 0.0172
+    }
+  ]
+}

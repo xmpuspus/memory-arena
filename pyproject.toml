@@ -1,0 +1,162 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "memory-arena"
+dynamic = ["version"]
+description = "Benchmark 20 agent-memory strategies (Mem0, Graphiti, Graphiti-on-FalkorDB, Cognee, LangMem, Memori, Karpathy LLM Wiki, A-MEM, HippoRAG 2, quantum rerankers, plus pure-Python baselines and advanced retrievers) on the same evaluator under the same configs"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "Xavier Puspus", email = "36430014+xmpuspus@users.noreply.github.com" }]
+keywords = [
+    "agent-memory",
+    "memory-systems",
+    "benchmark",
+    "mem0",
+    "zep",
+    "graphiti",
+    "cognee",
+    "langmem",
+    "longmemeval",
+    "llm",
+    "evaluation",
+    "rag-evaluation",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "typer==0.12.5",
+    "click==8.1.8",
+    "rich==13.9.4",
+    "pydantic==2.10.4",
+    "pydantic-settings==2.7.1",
+    "anthropic==0.42.0",
+    "neo4j==5.27.0",
+    "chromadb==0.5.23",
+    "jellyfish==1.1.3",
+    "networkx==3.4.2",
+    "pyyaml==6.0.2",
+    "fastapi==0.115.6",
+    "uvicorn[standard]==0.34.0",
+    "sse-starlette==2.2.1",
+    "openai==2.24.0",
+    "tiktoken==0.7.0",
+    "httpx==0.28.1",
+    "rank-bm25==0.2.2",
+    "tenacity==9.0.0",
+    "numpy>=1.26,<3.0",
+    "scikit-learn>=1.5,<2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.4", "ruff==0.8.6", "pytest-asyncio==0.24.0"]
+mem0 = ["mem0ai==2.0.2"]
+# mem0g pins mem0ai v1 because v2 OSS removed graph_store entirely (~4000 LOC of
+# graph driver code deleted in v2.0.0). Install separately, NOT alongside [mem0]:
+#   pip install 'memory-arena[mem0g]'
+# Slated for deprecation in v0.2 once graphiti covers the graph-memory comparison.
+mem0g = ["mem0ai==0.1.114", "langchain-neo4j==0.4.0"]
+graphiti = ["graphiti-core==0.13.0"]
+# graphiti_falkor needs graphiti-core>=0.17 (first release with the FalkorDB
+# driver) plus the falkordb client. The `graphiti` extra stays pinned to 0.13
+# for baseline reproducibility, so install graphiti_falkor in its OWN env, NOT
+# alongside [graphiti] (and it is intentionally absent from [all-systems] for
+# the same version-conflict reason):
+#   pip install 'memory-arena[falkordb]'
+falkordb = ["graphiti-core[falkordb]>=0.17.0", "falkordb>=1.0.0"]
+cognee = ["cognee>=1.0,<2.0", "s3fs>=2024.0.0", "fsspec>=2024.0.0"]
+langmem = ["langmem>=0.0.10", "langgraph>=0.2.0"]
+memori = ["memori>=3.0.0,<4.0.0", "psycopg[binary]>=3.2.0"]
+# sqr (Simulated Quantum Reranker) runs SWAP-test circuits on the Aer
+# simulator. qiss needs nothing here — it is pure NumPy (a core dep). Kept out
+# of [all-systems] so the core/CI install stays light (qiskit-aer is a large
+# compiled wheel), exactly like [falkordb]:
+#   pip install 'memory-arena[quantum]'
+quantum = ["qiskit==2.4.2", "qiskit-aer==0.17.2"]
+all-systems = [
+    "mem0ai==2.0.2",
+    "graphiti-core==0.13.0",
+    "cognee>=1.0,<2.0",
+    "s3fs>=2024.0.0",
+    "fsspec>=2024.0.0",
+    "langmem>=0.0.10",
+    "langgraph>=0.2.0",
+    "memori>=3.0.0,<4.0.0",
+    "psycopg[binary]>=3.2.0",
+]
+
+[project.scripts]
+memory-arena = "memory_arena.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/xmpuspus/memory-arena"
+Documentation = "https://github.com/xmpuspus/memory-arena/tree/main/docs"
+Repository = "https://github.com/xmpuspus/memory-arena"
+Issues = "https://github.com/xmpuspus/memory-arena/issues"
+
+[tool.hatch.version]
+path = "memory_arena/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "docs/audits/",
+    "datasets/longmemeval-s/raw/",
+    "web/node_modules/",
+    "web/.next/",
+    "web/out/",
+    "tests/",
+    "cypher/",
+    ".github/",
+    ".venv/",
+    "results/v0.1.4-archive/",
+    "results/run_*/",
+    "**/.gitkeep",
+    "**/__pycache__/",
+]
+include = [
+    "memory_arena/**/*",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "pyproject.toml",
+    "docs/showcase.png",
+    "docs/hero.png",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["memory_arena"]
+# Bundle the smoke corpus + a results snapshot inside the wheel so
+# `memory-arena demo` works even when the user installed from PyPI and has no
+# ./datasets or ./results dir locally. Loaders fall back to this tree via
+# memory_arena/paths.py.
+artifacts = [
+    "memory_arena/data/**",
+    "memory_arena/static/**",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+exclude = ["web", "datasets", "results", "memory_arena/static"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+
+[tool.ruff.lint.per-file-ignores]
+"memory_arena/strategies/raptor.py" = ["N806"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = ["live: requires API keys and live services"]

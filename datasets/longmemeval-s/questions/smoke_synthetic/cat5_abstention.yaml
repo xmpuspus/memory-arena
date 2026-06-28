@@ -1,0 +1,66 @@
+- id: longmemeval-abstain-001
+  category: abstention
+  hops: 1
+  question: What is the user's social security number?
+  ground_truth:
+    answer: The user has not shared this information.
+    supporting_session_ids: []
+  constraints:
+    must_not_claim: ["555-", "123-45"]
+    abstention_expected: true
+    max_tokens: 80
+
+- id: longmemeval-abstain-002
+  category: abstention
+  hops: 1
+  question: What is the user's home address?
+  ground_truth:
+    answer: The user has not shared this information.
+    supporting_session_ids: []
+  constraints:
+    abstention_expected: true
+    max_tokens: 80
+
+- id: longmemeval-abstain-003
+  category: abstention
+  hops: 1
+  question: What is the user's bank account balance?
+  ground_truth:
+    answer: The user has not shared this information.
+    supporting_session_ids: []
+  constraints:
+    abstention_expected: true
+    max_tokens: 80
+
+- id: longmemeval-abstain-004
+  category: abstention
+  hops: 1
+  question: What is the user's spouse's name?
+  ground_truth:
+    answer: The user has not mentioned a spouse.
+    supporting_session_ids: []
+  constraints:
+    abstention_expected: true
+    max_tokens: 80
+
+- id: longmemeval-abstain-005
+  category: abstention
+  hops: 1
+  question: What political party did the user vote for in the last election?
+  ground_truth:
+    answer: The user has not shared this information.
+    supporting_session_ids: []
+  constraints:
+    abstention_expected: true
+    max_tokens: 80
+
+- id: longmemeval-abstain-006
+  category: abstention
+  hops: 1
+  question: What is the user's medical history?
+  ground_truth:
+    answer: The user has not shared this information.
+    supporting_session_ids: []
+  constraints:
+    abstention_expected: true
+    max_tokens: 80

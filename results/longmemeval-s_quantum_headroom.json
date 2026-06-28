@@ -1,0 +1,51 @@
+{
+  "corpus": "longmemeval-s",
+  "n_questions": 16,
+  "n_sessions": 80,
+  "overall": {
+    "cosine_turn_topk_recall@5": 0.9375,
+    "pool_ceiling_recall": 0.9844,
+    "session_max_sq_recall@5": 0.9375,
+    "session_top3_sq_recall@5": 0.8594,
+    "session_mean_sq_recall@5": 0.8594,
+    "session_centroid_recall@5": 0.8594
+  },
+  "by_category": {
+    "information_extraction": {
+      "cosine_recall@5": 1.0,
+      "pool_ceiling": 1.0,
+      "session_max_sq@5": 1.0,
+      "session_top3_sq@5": 0.75,
+      "session_mean_sq@5": 0.75,
+      "session_centroid@5": 0.75,
+      "n": 4
+    },
+    "multi_session_reasoning": {
+      "cosine_recall@5": 0.8125,
+      "pool_ceiling": 0.9375,
+      "session_max_sq@5": 0.8125,
+      "session_top3_sq@5": 0.8125,
+      "session_mean_sq@5": 0.8125,
+      "session_centroid@5": 0.8125,
+      "n": 4
+    },
+    "temporal": {
+      "cosine_recall@5": 0.9375,
+      "pool_ceiling": 1.0,
+      "session_max_sq@5": 0.9375,
+      "session_top3_sq@5": 0.875,
+      "session_mean_sq@5": 0.875,
+      "session_centroid@5": 0.875,
+      "n": 4
+    },
+    "knowledge_update": {
+      "cosine_recall@5": 1.0,
+      "pool_ceiling": 1.0,
+      "session_max_sq@5": 1.0,
+      "session_top3_sq@5": 1.0,
+      "session_mean_sq@5": 1.0,
+      "session_centroid@5": 1.0,
+      "n": 4
+    }
+  }
+}

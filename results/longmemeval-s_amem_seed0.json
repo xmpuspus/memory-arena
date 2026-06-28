@@ -1,0 +1,1471 @@
+{
+  "strategy": "amem",
+  "run_id": "3d4e27c1",
+  "started_at": "2026-06-26T13:42:51.291583+00:00",
+  "ingest_records": [
+    {
+      "session_id": "sharegpt_yywfIrx_0",
+      "latency_ms": 4285.291834035888,
+      "tokens_used": 569,
+      "cost_usd": 0.0017549999999999998,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "85a1be56_1",
+      "latency_ms": 6483.876291196793,
+      "tokens_used": 3095,
+      "cost_usd": 0.012476999999999999,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_Jcy1CVN_0",
+      "latency_ms": 3788.2390411105007,
+      "tokens_used": 2483,
+      "cost_usd": 0.008565,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "answer_280352e9",
+      "latency_ms": 5264.867957914248,
+      "tokens_used": 3237,
+      "cost_usd": 0.012518999999999999,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "db73b7e4_4",
+      "latency_ms": 20801.57949985005,
+      "tokens_used": 6999,
+      "cost_usd": 0.031017000000000003,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_5V5H2HN_0",
+      "latency_ms": 4407.466665841639,
+      "tokens_used": 1758,
+      "cost_usd": 0.0074340000000000005,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_577747",
+      "latency_ms": 4242.5726659130305,
+      "tokens_used": 1354,
+      "cost_usd": 0.00537,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "answer_40a90d51",
+      "latency_ms": 7456.210916861892,
+      "tokens_used": 2832,
+      "cost_usd": 0.010584,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_9MbC1u2_0",
+      "latency_ms": 1879.3249998707324,
+      "tokens_used": 436,
+      "cost_usd": 0.001356,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_122409",
+      "latency_ms": 13253.50591703318,
+      "tokens_used": 3157,
+      "cost_usd": 0.014019,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_174711",
+      "latency_ms": 1463.7979578692466,
+      "tokens_used": 1245,
+      "cost_usd": 0.0037830000000000003,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "answer_d61669c7",
+      "latency_ms": 6214.675291907042,
+      "tokens_used": 2191,
+      "cost_usd": 0.008636999999999999,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "5d522308_1",
+      "latency_ms": 1711.0886659938842,
+      "tokens_used": 260,
+      "cost_usd": 0.0008280000000000001,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_132201",
+      "latency_ms": 2903.3569591119885,
+      "tokens_used": 1317,
+      "cost_usd": 0.004959,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_LG0uJvY_0",
+      "latency_ms": 14651.46870794706,
+      "tokens_used": 4574,
+      "cost_usd": 0.020826,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_355c48bb",
+      "latency_ms": 5438.272916013375,
+      "tokens_used": 1805,
+      "cost_usd": 0.007323,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "f10be626",
+      "latency_ms": 8396.583541994914,
+      "tokens_used": 3562,
+      "cost_usd": 0.013746,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "b10c041b_2",
+      "latency_ms": 10715.643208939582,
+      "tokens_used": 3356,
+      "cost_usd": 0.013224,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "750b437b_3",
+      "latency_ms": 4935.966499848291,
+      "tokens_used": 2314,
+      "cost_usd": 0.009162,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_afa9873b_2",
+      "latency_ms": 26998.79916710779,
+      "tokens_used": 8682,
+      "cost_usd": 0.040709999999999996,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_afa9873b_3",
+      "latency_ms": 6098.469041055068,
+      "tokens_used": 2317,
+      "cost_usd": 0.009975,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "answer_afa9873b_1",
+      "latency_ms": 8863.18049998954,
+      "tokens_used": 2441,
+      "cost_usd": 0.010478999999999999,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "0bab76de",
+      "latency_ms": 4661.458125105128,
+      "tokens_used": 2683,
+      "cost_usd": 0.010221,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "5459ee85",
+      "latency_ms": 4164.459957974032,
+      "tokens_used": 1911,
+      "cost_usd": 0.007653,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_89M8Aiz_0",
+      "latency_ms": 23583.54908390902,
+      "tokens_used": 6186,
+      "cost_usd": 0.02793,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "answer_ec904b3c_1",
+      "latency_ms": 5171.428292058408,
+      "tokens_used": 3358,
+      "cost_usd": 0.012282,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_ec904b3c_4",
+      "latency_ms": 3714.323124848306,
+      "tokens_used": 3476,
+      "cost_usd": 0.011544,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "answer_ec904b3c_3",
+      "latency_ms": 5479.602957842872,
+      "tokens_used": 3748,
+      "cost_usd": 0.013475999999999998,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_ec904b3c_2",
+      "latency_ms": 6275.983416941017,
+      "tokens_used": 3374,
+      "cost_usd": 0.013314,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_566770",
+      "latency_ms": 13593.488749815151,
+      "tokens_used": 5474,
+      "cost_usd": 0.024654,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "answer_593bdffd_4",
+      "latency_ms": 7514.601915841922,
+      "tokens_used": 3320,
+      "cost_usd": 0.013512,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "0cd57281_1",
+      "latency_ms": 6529.28370796144,
+      "tokens_used": 2686,
+      "cost_usd": 0.010121999999999999,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_593bdffd_1",
+      "latency_ms": 6445.5114169977605,
+      "tokens_used": 4016,
+      "cost_usd": 0.0147,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_593bdffd_3",
+      "latency_ms": 4788.542167050764,
+      "tokens_used": 3798,
+      "cost_usd": 0.013578,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_593bdffd_2",
+      "latency_ms": 23604.72295898944,
+      "tokens_used": 9439,
+      "cost_usd": 0.038505,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_esZWTJv_8",
+      "latency_ms": 4522.006958024576,
+      "tokens_used": 2404,
+      "cost_usd": 0.008556000000000001,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_105359",
+      "latency_ms": 1254.405708052218,
+      "tokens_used": 1367,
+      "cost_usd": 0.004149,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_431538",
+      "latency_ms": 1229.2273750063032,
+      "tokens_used": 1752,
+      "cost_usd": 0.0053040000000000006,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "answer_a8b4290f_3",
+      "latency_ms": 45166.23895801604,
+      "tokens_used": 3585,
+      "cost_usd": 0.013971,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "answer_a8b4290f_1",
+      "latency_ms": 16929.441540967673,
+      "tokens_used": 6501,
+      "cost_usd": 0.029775,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "answer_a8b4290f_2",
+      "latency_ms": 6003.496041987091,
+      "tokens_used": 2923,
+      "cost_usd": 0.011913,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "f04fae0a",
+      "latency_ms": 3925.5587090738118,
+      "tokens_used": 2994,
+      "cost_usd": 0.010865999999999999,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_78027",
+      "latency_ms": 4081.9782910402864,
+      "tokens_used": 1478,
+      "cost_usd": 0.005286,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "91b3b8e0_1",
+      "latency_ms": 1541.291374946013,
+      "tokens_used": 262,
+      "cost_usd": 0.000834,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "answer_d00ba6d0_1",
+      "latency_ms": 20360.853667138144,
+      "tokens_used": 7604,
+      "cost_usd": 0.034308,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_d00ba6d0_2",
+      "latency_ms": 5968.613750068471,
+      "tokens_used": 3575,
+      "cost_usd": 0.012561000000000001,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_V3dAgEu_0",
+      "latency_ms": 1031.7627920303494,
+      "tokens_used": 527,
+      "cost_usd": 0.001629,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_308848",
+      "latency_ms": 1439.2729999963194,
+      "tokens_used": 1393,
+      "cost_usd": 0.004227,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_vonEwUo_17",
+      "latency_ms": 5641.75649988465,
+      "tokens_used": 1310,
+      "cost_usd": 0.003978,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "answer_3e9fce53_1",
+      "latency_ms": 14181.980582885444,
+      "tokens_used": 4923,
+      "cost_usd": 0.021200999999999998,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_3e9fce53_2",
+      "latency_ms": 3452.195917023346,
+      "tokens_used": 2307,
+      "cost_usd": 0.007965,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "answer_3e9fce53_3",
+      "latency_ms": 4864.370709052309,
+      "tokens_used": 2784,
+      "cost_usd": 0.010872,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_84486",
+      "latency_ms": 4002.446792088449,
+      "tokens_used": 1011,
+      "cost_usd": 0.004065,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_230339",
+      "latency_ms": 1003.5882911179215,
+      "tokens_used": 1444,
+      "cost_usd": 0.00438,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_270411",
+      "latency_ms": 17029.700208920985,
+      "tokens_used": 4203,
+      "cost_usd": 0.018992999999999996,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "answer_0b4a8adc_1",
+      "latency_ms": 5496.809042058885,
+      "tokens_used": 3689,
+      "cost_usd": 0.013347,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "53949711_2",
+      "latency_ms": 4881.07645791024,
+      "tokens_used": 2292,
+      "cost_usd": 0.009479999999999999,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_5Rpp72b_148",
+      "latency_ms": 3776.4468749519438,
+      "tokens_used": 1655,
+      "cost_usd": 0.006477,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "4bf66c38_2",
+      "latency_ms": 6871.639999793842,
+      "tokens_used": 2954,
+      "cost_usd": 0.012150000000000001,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "answer_4bfcc250_4",
+      "latency_ms": 22878.147416980937,
+      "tokens_used": 8770,
+      "cost_usd": 0.039462,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_4bfcc250_3",
+      "latency_ms": 6793.789417017251,
+      "tokens_used": 3327,
+      "cost_usd": 0.012957,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "answer_4bfcc250_2",
+      "latency_ms": 5407.437583897263,
+      "tokens_used": 3120,
+      "cost_usd": 0.011664,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_4bfcc250_1",
+      "latency_ms": 5344.884250080213,
+      "tokens_used": 2821,
+      "cost_usd": 0.010791,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "6387e969",
+      "latency_ms": 4519.120083190501,
+      "tokens_used": 2945,
+      "cost_usd": 0.010335,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_wsUEkMN_0",
+      "latency_ms": 12349.266750039533,
+      "tokens_used": 4886,
+      "cost_usd": 0.021282,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "e32f5666_3",
+      "latency_ms": 7925.21845898591,
+      "tokens_used": 3209,
+      "cost_usd": 0.011811,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_a25d4a91_1",
+      "latency_ms": 4852.058165939525,
+      "tokens_used": 2789,
+      "cost_usd": 0.010551,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_a25d4a91_2",
+      "latency_ms": 4454.214084194973,
+      "tokens_used": 3345,
+      "cost_usd": 0.011859000000000001,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_320783",
+      "latency_ms": 2106.096416944638,
+      "tokens_used": 1007,
+      "cost_usd": 0.003069,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_I5HWvry_0",
+      "latency_ms": 14239.406583132222,
+      "tokens_used": 4849,
+      "cost_usd": 0.022406999999999996,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_425346",
+      "latency_ms": 3001.613958971575,
+      "tokens_used": 759,
+      "cost_usd": 0.003129,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "answer_3f9693b7_1",
+      "latency_ms": 5109.4325829762965,
+      "tokens_used": 3133,
+      "cost_usd": 0.011559,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_3f9693b7_2",
+      "latency_ms": 6925.463916035369,
+      "tokens_used": 2491,
+      "cost_usd": 0.010533,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "062e9120_1",
+      "latency_ms": 6614.750124979764,
+      "tokens_used": 3153,
+      "cost_usd": 0.011703,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "sharegpt_kaEoitr_15",
+      "latency_ms": 19578.380499966443,
+      "tokens_used": 6369,
+      "cost_usd": 0.029823,
+      "facts_extracted": 1,
+      "error": ""
+    },
+    {
+      "session_id": "47c5482a",
+      "latency_ms": 4289.147665956989,
+      "tokens_used": 2244,
+      "cost_usd": 0.00864,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_0b1a0942_1",
+      "latency_ms": 4399.035416077822,
+      "tokens_used": 2482,
+      "cost_usd": 0.009101999999999999,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_0b1a0942_2",
+      "latency_ms": 4233.036834048107,
+      "tokens_used": 2530,
+      "cost_usd": 0.00957,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "ultrachat_218093",
+      "latency_ms": 7252.110125031322,
+      "tokens_used": 1084,
+      "cost_usd": 0.0033,
+      "facts_extracted": 0,
+      "error": ""
+    },
+    {
+      "session_id": "d36d11b9_2",
+      "latency_ms": 20204.168291995302,
+      "tokens_used": 7124,
+      "cost_usd": 0.033288,
+      "facts_extracted": 3,
+      "error": ""
+    },
+    {
+      "session_id": "answer_3a6f1e82_1",
+      "latency_ms": 5927.563915960491,
+      "tokens_used": 3271,
+      "cost_usd": 0.012237,
+      "facts_extracted": 2,
+      "error": ""
+    },
+    {
+      "session_id": "answer_3a6f1e82_2",
+      "latency_ms": 6889.551125001162,
+      "tokens_used": 2523,
+      "cost_usd": 0.010749,
+      "facts_extracted": 3,
+      "error": ""
+    }
+  ],
+  "recall_records": [
+    {
+      "question_id": "e47becba",
+      "category": "information_extraction",
+      "answer": "Based on the information I have, you hold a degree in **Business Administration** [answer_280352e9].",
+      "supporting_session_ids": [
+        "answer_280352e9",
+        "answer_ec904b3c_1",
+        "answer_ec904b3c_2",
+        "answer_ec904b3c_3",
+        "sharegpt_Jcy1CVN_0",
+        "85a1be56_1"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 1.0,
+        "completeness": 1.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 100.0,
+        "judge_rationale": "Matches the reference exactly.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": false,
+        "abstention_correct": true,
+        "cost_usd": 0.00588,
+        "tokens_used": 236
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 0.2,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2686.4912500604987,
+      "cost_usd": 0.002454,
+      "tokens_used": 710,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "118b2229",
+      "category": "information_extraction",
+      "answer": "I do not have that information. There are no notes in my retrieved memory about the length of your daily commute to work.",
+      "supporting_session_ids": [
+        "750b437b_3",
+        "answer_280352e9",
+        "answer_4bfcc250_3",
+        "d36d11b9_2",
+        "answer_a25d4a91_2",
+        "answer_a25d4a91_1"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.0,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": false,
+        "judge_score": 0.0,
+        "judge_rationale": "The candidate fails to provide the commute length stated in the reference (45 minutes each way).",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.00735,
+        "tokens_used": 258
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 0.0,
+        "session_recall_at_k": 0.0,
+        "session_precision_at_k": 0.0,
+        "session_mrr": 0.0,
+        "session_ndcg_at_k": 0.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2740.5191669240594,
+      "cost_usd": 0.003009,
+      "tokens_used": 887,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "51a45a95",
+      "category": "information_extraction",
+      "answer": "I do not have that information. The notes I have access to mention that you organize coupons in a binder and check email for coupon deals [answer_d61669c7], and that you shop at Target using the Cartwheel app [answer_d61669c7], but there is no specific mention of redeeming a $5 coupon on coffee creamer at any particular store.",
+      "supporting_session_ids": [
+        "answer_d61669c7",
+        "0bab76de",
+        "answer_3e9fce53_1",
+        "answer_3a6f1e82_1"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.4,
+        "completeness": 0.2,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 40.0,
+        "judge_rationale": "Candidate mentions Target but ultimately says it doesn't know, failing to directly identify Target as the answer.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.008910000000000001,
+        "tokens_used": 334
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 0.25,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 4494.748708792031,
+      "cost_usd": 0.002895,
+      "tokens_used": 605,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "58bf7951",
+      "category": "information_extraction",
+      "answer": "I do not have that information. The notes mention that your friend Emily is being encouraged to audition at a local community theater, but there's no record of you attending a specific play there.",
+      "supporting_session_ids": [
+        "answer_355c48bb",
+        "47c5482a",
+        "answer_4bfcc250_2"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.05,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 5.0,
+        "judge_rationale": "The candidate fails to identify the play (The Glass Menagerie) and instead claims no information is available.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.007875,
+        "tokens_used": 281
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 0.3333333333333333,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2316.439041867852,
+      "cost_usd": 0.0018120000000000002,
+      "tokens_used": 436,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "0a995998",
+      "category": "multi_session_reasoning",
+      "answer": "Based on my notes, you have **2 items** to pick up:\n\n1. **Navy blue blazer** from the dry cleaner [answer_afa9873b_2]\n2. **Replacement boots from Zara** (exchanged for a larger size on February 5th) [answer_afa9873b_3]\n\nBoth are awaiting pickup on your end. You had also noted plans to track these in a notes app on your phone to avoid forgetting them! [answer_afa9873b_1]",
+      "supporting_session_ids": [
+        "answer_afa9873b_2",
+        "answer_afa9873b_3",
+        "answer_afa9873b_1"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.3,
+        "completeness": 0.4,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 30.0,
+        "judge_rationale": "Candidate says 2 items, but reference indicates 3, so it misses one item.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": false,
+        "abstention_correct": true,
+        "cost_usd": 0.008820000000000001,
+        "tokens_used": 368
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 1.0,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 3987.2431659605354,
+      "cost_usd": 0.003393,
+      "tokens_used": 643,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "6d550036",
+      "category": "multi_session_reasoning",
+      "answer": "Based on the notes I have, I can identify the following projects you've led or are currently leading:\n\n1. **Marketing Research Class Project** \u2013 You led a data analysis team conducting a comprehensive market analysis for a new product launch [answer_ec904b3c_1].\n2. **Hopper UGC/Creator Ad Campaign** \u2013 You are currently working at an agency managing a global UGC/creator ad campaign for the travel app Hopper, coordinating across multiple regions (APAC, LatAM+Canada, Europe) [sharegpt_LG0uJvY_0].\n3. **Data Mining Class Project** \u2013 You are working on a solo data mining project analyzing customer purchase data using Python and R [answer_ec904b3c_2].\n\nThat gives a count of **at least 3 projects**. There is also a mention of **Beanstalk Consulting** [sharegpt_5Rpp72b_148], which you run or represent, but it's unclear whether that constitutes a distinct \"project\" or more of an ongoing business venture.\n\nWould you like more details on any of these?",
+      "supporting_session_ids": [
+        "answer_ec904b3c_1",
+        "sharegpt_LG0uJvY_0",
+        "sharegpt_5Rpp72b_148",
+        "answer_ec904b3c_2",
+        "answer_ec904b3c_3"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.3,
+        "completeness": 0.3,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 30.0,
+        "judge_rationale": "The reference indicates 2 projects, but the candidate claims at least 3 (and possibly 4), overcounting and contradicting the reference.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": false,
+        "abstention_correct": true,
+        "cost_usd": 0.01314,
+        "tokens_used": 580
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 0.75,
+        "session_precision_at_k": 0.6,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 0.7095272044910244,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 5872.782207792625,
+      "cost_usd": 0.0058709999999999995,
+      "tokens_used": 933,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "gpt4_59c863d7",
+      "category": "multi_session_reasoning",
+      "answer": "Based on the notes I have, I can identify the following model kits you've worked on or acquired:\n\n1. **Revell F-15 Eagle** \u2013 one of your first projects getting back into the hobby [answer_593bdffd_1]\n2. **Tamiya 1/48 Spitfire Mk.V** \u2013 recently completed [answer_593bdffd_2]\n3. **1/72 scale B-29 Bomber** \u2013 a current/upcoming project [answer_593bdffd_1, answer_593bdffd_4]\n4. **1/24 scale 1969 Camaro** \u2013 acquired at a model show [answer_593bdffd_4]\n5. **1/16 scale German Tiger I** \u2013 a tank diorama project [answer_593bdffd_3]\n\nThat gives a total of at least **5 model kits** mentioned across our conversations. There may be others not captured in my notes.",
+      "supporting_session_ids": [
+        "answer_593bdffd_4",
+        "answer_593bdffd_2",
+        "answer_593bdffd_1",
+        "answer_593bdffd_3"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 1.0,
+        "completeness": 1.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 100.0,
+        "judge_rationale": "Candidate lists all five kits with matching scales and identifies the same total.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": false,
+        "abstention_correct": true,
+        "cost_usd": 0.012150000000000001,
+        "tokens_used": 602
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 1.0,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 5399.490625131875,
+      "cost_usd": 0.005019,
+      "tokens_used": 765,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "b5ef892d",
+      "category": "multi_session_reasoning",
+      "answer": "Based on the notes I have, I can see references to camping trips in the United States, but I don't have clear information confirming they all occurred in the same year. Here's what the notes show:\n\n- A **5-day camping trip to Yellowstone National Park** [answer_a8b4290f_1]\n- A **7-day family road trip to Utah** in **February 2023**, though this was noted as being *without camping* [answer_a8b4290f_3]\n\nSo based on the available information, the only U.S. camping trip I can confirm is the **5-day Yellowstone trip** [answer_a8b4290f_1]. I don't have enough information to confirm the exact year of that trip or whether there were other camping trips in the same year to give you a full total.",
+      "supporting_session_ids": [
+        "answer_a8b4290f_3",
+        "answer_a8b4290f_1",
+        "answer_a8b4290f_2"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.1,
+        "completeness": 0.05,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 10.0,
+        "judge_rationale": "The candidate fails to provide the correct answer of 8 days and only identifies 5 days from one trip while expressing uncertainty.",
+        "temporal_correct": true,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.011235,
+        "tokens_used": 465
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 1.0,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 5407.182459020987,
+      "cost_usd": 0.004845,
+      "tokens_used": 855,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "gpt4_59149c77",
+      "category": "temporal",
+      "answer": "I don't have that information. While my notes confirm that you visited both MoMA [answer_d00ba6d0_1] and the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art [answer_d00ba6d0_2], neither note includes the specific dates of those visits. Therefore, I'm unable to calculate the number of days between them.",
+      "supporting_session_ids": [
+        "answer_d00ba6d0_2",
+        "answer_d00ba6d0_1",
+        "6387e969",
+        "answer_a8b4290f_3",
+        "answer_a8b4290f_1"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.025,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 5.0,
+        "judge_rationale": "Candidate refuses to answer and fails to provide the 7-8 day interval given in the reference.",
+        "temporal_correct": false,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.009014999999999999,
+        "tokens_used": 361
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 0.4,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 3275.2098329365253,
+      "cost_usd": 0.003144,
+      "tokens_used": 708,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "gpt4_f49edff3",
+      "category": "temporal",
+      "answer": "Based on the notes I have, I can only confirm two of the three events you mentioned:\n\n1. **Helping your friend prepare the nursery** [answer_3e9fce53_1]\n2. **Ordering a customized phone case for your friend's birthday** [answer_3e9fce53_3]\n\nHowever, I **do not have any information** about you helping your cousin pick out items for her baby shower. Since that event isn't in my notes, I'm unable to determine the chronological order of all three events as requested.",
+      "supporting_session_ids": [
+        "answer_3e9fce53_3",
+        "answer_3e9fce53_1",
+        "answer_3e9fce53_2",
+        "answer_afa9873b_2"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.3,
+        "completeness": 0.3,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 60.0,
+        "judge_rationale": "The candidate correctly identifies two events but fails to recall the baby shower event and does not provide the chronological order requested.",
+        "temporal_correct": false,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.010620000000000001,
+        "tokens_used": 444
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 0.75,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 3632.0355001371354,
+      "cost_usd": 0.003465,
+      "tokens_used": 655,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "71017276",
+      "category": "temporal",
+      "answer": "I don't have that information. The notes mention that you inherited a crystal chandelier from your great-grandmother [answer_0b4a8adc_1], but there are no details recorded about when you met up with your aunt or how many weeks ago you received it.",
+      "supporting_session_ids": [
+        "answer_0b4a8adc_1",
+        "0bab76de",
+        "answer_afa9873b_2"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.025,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 5.0,
+        "judge_rationale": "The candidate fails to provide the answer (4) and instead claims no information is available.",
+        "temporal_correct": false,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.007634999999999999,
+        "tokens_used": 293
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 0.3333333333333333,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 3333.8694169651717,
+      "cost_usd": 0.002436,
+      "tokens_used": 568,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "b46e15ed",
+      "category": "temporal",
+      "answer": "I don't have enough information to answer that question. While my notes show that you've participated in several charity events \u2014 including a cycling event [answer_4bfcc250_3], a walking fundraiser [answer_4bfcc250_1], a charity gala [answer_4bfcc250_4], a book drive [answer_4bfcc250_2], and charity 5K runs [answer_a25d4a91_1, answer_a25d4a91_2] \u2014 I have **no dates recorded** for any of these events, nor any information indicating that two of them occurred on consecutive days. Therefore, I cannot calculate how many months have passed since such an occurrence.",
+      "supporting_session_ids": [
+        "answer_4bfcc250_3",
+        "answer_4bfcc250_1",
+        "answer_4bfcc250_4",
+        "answer_a25d4a91_2",
+        "answer_4bfcc250_2",
+        "answer_a25d4a91_1"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.05,
+        "completeness": 0.0,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 10.0,
+        "judge_rationale": "The candidate fails to provide the numeric answer of 2 and instead claims insufficient information, contradicting the reference.",
+        "temporal_correct": false,
+        "update_precision_correct": true,
+        "abstained": true,
+        "abstention_correct": false,
+        "cost_usd": 0.01047,
+        "tokens_used": 430
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 0.8,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 0.9828920819566879,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 4107.5791250914335,
+      "cost_usd": 0.004368,
+      "tokens_used": 828,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "6a1eabeb",
+      "category": "knowledge_update",
+      "answer": "Based on the notes, there are two different personal best times mentioned across different sessions:\n\n- In one session [answer_a25d4a91_1], your personal best 5K time was **27:12**, set during a charity run.\n- In a later session [answer_a25d4a91_2], you had improved your personal best to **25:50**, which you were training to beat.\n\nIt appears your most recent personal best is **25:50**.",
+      "supporting_session_ids": [
+        "answer_a25d4a91_2",
+        "answer_a25d4a91_1",
+        "answer_4bfcc250_1",
+        "answer_4bfcc250_3",
+        "answer_4bfcc250_4",
+        "answer_4bfcc250_2"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.9,
+        "completeness": 0.95,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 90.0,
+        "judge_rationale": "Correctly identifies the most recent personal best as 25:50, matching the reference, with added context that doesn't contradict it.",
+        "temporal_correct": true,
+        "update_precision_correct": null,
+        "abstained": false,
+        "abstention_correct": true,
+        "cost_usd": 0.009675,
+        "tokens_used": 373
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 0.4,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 4511.833416996524,
+      "cost_usd": 0.0036,
+      "tokens_used": 772,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "6aeb4375",
+      "category": "knowledge_update",
+      "answer": "Based on my notes, I can see that you have visited **at least four Korean restaurants** in your city [answer_3f9693b7_2]. However, I don't have a more precise number beyond that.",
+      "supporting_session_ids": [
+        "answer_3f9693b7_2",
+        "answer_3f9693b7_1",
+        "5459ee85"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.95,
+        "completeness": 0.9,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 95.0,
+        "judge_rationale": "Candidate correctly identifies four Korean restaurants, matching the reference, though it hedges slightly with 'at least'.",
+        "temporal_correct": true,
+        "update_precision_correct": null,
+        "abstained": false,
+        "abstention_correct": true,
+        "cost_usd": 0.008505,
+        "tokens_used": 291
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 0.6666666666666666,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 2609.9192921537906,
+      "cost_usd": 0.002016,
+      "tokens_used": 472,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "830ce83f",
+      "category": "knowledge_update",
+      "answer": "Based on the retrieved notes, Rachel moved to **Chicago** after her recent relocation. [answer_0b1a0942_1]",
+      "supporting_session_ids": [
+        "answer_0b1a0942_1",
+        "answer_d00ba6d0_2",
+        "4bf66c38_2",
+        "answer_355c48bb",
+        "answer_a8b4290f_1",
+        "answer_d00ba6d0_1"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.1,
+        "completeness": 0.05,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 10.0,
+        "judge_rationale": "Candidate says Chicago, reference says the suburbs\u2014contradictory.",
+        "temporal_correct": true,
+        "update_precision_correct": null,
+        "abstained": false,
+        "abstention_correct": true,
+        "cost_usd": 0.0071400000000000005,
+        "tokens_used": 264
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 0.5,
+        "session_precision_at_k": 0.2,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 0.6131471927654584,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 1842.2932918183506,
+      "cost_usd": 0.002733,
+      "tokens_used": 779,
+      "recall_at_k_measurable": true,
+      "error": false
+    },
+    {
+      "question_id": "852ce960",
+      "category": "knowledge_update",
+      "answer": "Based on the notes from your chat history, there are actually two different pre-approval amounts mentioned across two sessions:\n\n1. **$350,000** pre-approval from Wells Fargo, noted while you were in the process of buying a $325,000 home. [answer_3a6f1e82_1]\n2. **$400,000** pre-approval from Wells Fargo, noted in a separate session where you had purchased a home and were setting up home insurance. [answer_3a6f1e82_2]\n\nIt's possible these refer to different points in time or different conversations. You may want to clarify which situation applies to your current needs!",
+      "supporting_session_ids": [
+        "answer_3a6f1e82_1",
+        "answer_3a6f1e82_2"
+      ],
+      "supporting_turn_ids": [],
+      "score": {
+        "accuracy": 0.7,
+        "completeness": 0.8,
+        "structural_pass": true,
+        "structural_fails": [],
+        "sources_pass": true,
+        "judge_score": 70.0,
+        "judge_rationale": "Candidate includes the correct $400,000 figure but introduces an additional $350,000 amount, which dilutes the directness of the answer.",
+        "temporal_correct": true,
+        "update_precision_correct": null,
+        "abstained": false,
+        "abstention_correct": true,
+        "cost_usd": 0.010815,
+        "tokens_used": 429
+      },
+      "ir": {
+        "k": 5,
+        "session_hit_at_k": 1.0,
+        "session_recall_at_k": 1.0,
+        "session_precision_at_k": 1.0,
+        "session_mrr": 1.0,
+        "session_ndcg_at_k": 1.0,
+        "turn_hit_at_k": 0.0,
+        "turn_recall_at_k": 0.0,
+        "turn_precision_at_k": 0.0,
+        "turn_mrr": 0.0,
+        "turn_ndcg_at_k": 0.0
+      },
+      "latency_ms": 4188.355708960444,
+      "cost_usd": 0.0037679999999999996,
+      "tokens_used": 648,
+      "recall_at_k_measurable": true,
+      "error": false
+    }
+  ],
+  "errors": [],
+  "swallowed_error_count": 0,
+  "finished_at": "2026-06-26T13:55:40.288015+00:00",
+  "accuracy": 0.3875,
+  "total_cost_usd": 1.0911750000000005,
+  "recall_cost_usd": 0.054827999999999995,
+  "avg_recall_latency_ms": 3775.374513163115,
+  "abstention_f1": null,
+  "abstention_n": 0,
+  "update_precision": null,
+  "update_n": 0,
+  "temporal_correctness": 0.0,
+  "temporal_n": 4,
+  "recall_at_k_measurable": true,
+  "mean_session_recall_at_k": 0.890625,
+  "mean_session_hit_at_k": 0.9375,
+  "ingest_total": 82,
+  "ingest_failed": 0,
+  "ingest_failure_rate": 0.0,
+  "status": "ok",
+  "cost_measurable": true,
+  "top_k": 5,
+  "questions_evaluated": 16,
+  "accuracy_by_category": {
+    "information_extraction": {
+      "accuracy": 0.3625,
+      "n": 4
+    },
+    "multi_session_reasoning": {
+      "accuracy": 0.425,
+      "n": 4
+    },
+    "temporal": {
+      "accuracy": 0.1,
+      "n": 4
+    },
+    "knowledge_update": {
+      "accuracy": 0.6625,
+      "n": 4
+    }
+  },
+  "metadata": {
+    "commit_sha": "886bc1fef8049219eca1ce0e0ab084effc0ac050",
+    "started_utc": "2026-06-26T13:42:51.195591+00:00",
+    "host": "Darwin 25.5.0 (arm64)",
+    "python": "3.12.4",
+    "top_k": 5,
+    "top_k_normalized": true,
+    "seed": 0,
+    "models": {
+      "anthropic_generate": "claude-sonnet-4-6",
+      "anthropic_fast": "claude-haiku-4-5-20251001",
+      "anthropic_judge": "claude-opus-4-7",
+      "openai_generate": "gpt-4o",
+      "openai_fast": "gpt-4o-mini",
+      "openai_judge": "gpt-4o",
+      "embedding": "text-embedding-3-large"
+    },
+    "package_versions": {
+      "memory-arena": "0.1.6",
+      "anthropic": "0.42.0",
+      "openai": "2.24.0",
+      "chromadb": "0.5.23",
+      "neo4j": "5.27.0",
+      "fastapi": "0.115.6",
+      "pydantic": "2.10.4",
+      "rank-bm25": "0.2.2",
+      "tiktoken": "0.7.0",
+      "tenacity": "9.0.0",
+      "numpy": "2.4.4",
+      "scikit-learn": "1.8.0",
+      "mem0ai": "2.0.2",
+      "graphiti-core": "0.13.0",
+      "cognee": "1.0.3",
+      "langmem": "0.0.30",
+      "langgraph": "1.1.10",
+      "memori": "3.3.2",
+      "psycopg": "3.3.3",
+      "s3fs": "not-installed"
+    }
+  }
+}

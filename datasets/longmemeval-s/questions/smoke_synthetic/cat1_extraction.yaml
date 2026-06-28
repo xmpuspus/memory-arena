@@ -1,0 +1,78 @@
+- id: longmemeval-extract-001
+  category: information_extraction
+  hops: 1
+  question: What kind of work does the user say they do?
+  ground_truth:
+    answer: Software engineer at a fintech startup, working on payments infrastructure.
+    supporting_session_ids: [session_03]
+    supporting_turn_ids: [session_03_turn_012]
+  constraints:
+    must_mention: [software engineer, fintech]
+    must_not_claim: [currently unemployed]
+    abstention_expected: false
+    max_tokens: 200
+
+- id: longmemeval-extract-002
+  category: information_extraction
+  hops: 1
+  question: What programming language did the user say they prefer?
+  ground_truth:
+    answer: Python
+    supporting_session_ids: [session_05]
+    supporting_turn_ids: [session_05_turn_004]
+  constraints:
+    must_mention: [Python]
+    abstention_expected: false
+    max_tokens: 100
+
+- id: longmemeval-extract-003
+  category: information_extraction
+  hops: 1
+  question: What is the user's name?
+  ground_truth:
+    answer: Alex
+    supporting_session_ids: [session_01]
+    supporting_turn_ids: [session_01_turn_001]
+  constraints:
+    must_mention: [Alex]
+    abstention_expected: false
+    max_tokens: 80
+
+- id: longmemeval-extract-004
+  category: information_extraction
+  hops: 1
+  question: What hobby does the user mention enjoying on weekends?
+  ground_truth:
+    answer: Mountain biking on local trails.
+    supporting_session_ids: [session_04]
+    supporting_turn_ids: [session_04_turn_006]
+  constraints:
+    must_mention: [mountain biking]
+    abstention_expected: false
+    max_tokens: 120
+
+- id: longmemeval-extract-005
+  category: information_extraction
+  hops: 1
+  question: What city does the user currently live in?
+  ground_truth:
+    answer: Manila
+    supporting_session_ids: [session_07]
+    supporting_turn_ids: [session_07_turn_002]
+  constraints:
+    must_mention: [Manila]
+    abstention_expected: false
+    max_tokens: 80
+
+- id: longmemeval-extract-006
+  category: information_extraction
+  hops: 1
+  question: What dietary preference does the user follow?
+  ground_truth:
+    answer: Pescatarian.
+    supporting_session_ids: [session_09]
+    supporting_turn_ids: [session_09_turn_003]
+  constraints:
+    must_mention: [pescatarian]
+    abstention_expected: false
+    max_tokens: 80

@@ -1,0 +1,90 @@
+{
+  "strategy": "hybrid_rrf",
+  "corpus": "longmemeval-s",
+  "status": "ok",
+  "n_seeds": 3,
+  "accuracy": 0.34875000000000006,
+  "accuracy_ci": 0.007072540797572922,
+  "accuracy_per_seed": [
+    0.35500000000000004,
+    0.34875,
+    0.3425
+  ],
+  "total_cost_usd": 0.7307827499999999,
+  "total_cost_ci": 0.04076087056272595,
+  "avg_recall_latency_ms": 12359.571969529497,
+  "avg_recall_latency_ci_ms": 158.61032033367866,
+  "mean_session_recall_at_k": 0.8489583333333334,
+  "mean_session_recall_at_k_ci": 0.04083333333333334,
+  "mean_session_hit_at_k": 0.9791666666666666,
+  "mean_session_hit_at_k_ci": 0.04083333333333333,
+  "ingest_failure_rate": 0.0,
+  "questions_evaluated_per_seed": [
+    16,
+    16,
+    16
+  ],
+  "accuracy_by_category": {
+    "information_extraction": {
+      "accuracy": 0.4200000000000001,
+      "accuracy_ci": 7.693453047550496e-17,
+      "n": 4
+    },
+    "multi_session_reasoning": {
+      "accuracy": 0.4033333333333333,
+      "accuracy_ci": 0.013066666666666678,
+      "n": 4
+    },
+    "temporal": {
+      "accuracy": 0.1516666666666667,
+      "accuracy_ci": 0.018188030251911402,
+      "n": 4
+    },
+    "knowledge_update": {
+      "accuracy": 0.4200000000000001,
+      "accuracy_ci": 7.693453047550496e-17,
+      "n": 4
+    }
+  },
+  "metadata": {
+    "commit_sha": "49c2d472238a2fe3a5fce6b7279eee3bf1af41c1",
+    "started_utc": "2026-04-30T04:20:03.788359+00:00",
+    "host": "Darwin 25.3.0 (arm64)",
+    "python": "3.12.4",
+    "top_k": 5,
+    "top_k_normalized": true,
+    "seed": 2,
+    "models": {
+      "anthropic_generate": "claude-sonnet-4-6",
+      "anthropic_fast": "claude-haiku-4-5-20251001",
+      "anthropic_judge": "claude-opus-4-7",
+      "openai_generate": "gpt-4o",
+      "openai_fast": "gpt-4o-mini",
+      "openai_judge": "gpt-4o",
+      "embedding": "text-embedding-3-large"
+    },
+    "package_versions": {
+      "memory-arena": "0.1.5",
+      "anthropic": "0.42.0",
+      "openai": "2.24.0",
+      "chromadb": "0.5.23",
+      "neo4j": "5.27.0",
+      "fastapi": "0.115.6",
+      "pydantic": "2.10.4",
+      "rank-bm25": "0.2.2",
+      "tiktoken": "0.7.0",
+      "tenacity": "9.0.0",
+      "numpy": "2.4.4",
+      "scikit-learn": "1.8.0",
+      "mem0ai": "0.1.114",
+      "letta-client": "1.10.3",
+      "graphiti-core": "0.13.0",
+      "cognee": "1.0.3",
+      "langmem": "0.0.30",
+      "langgraph": "1.1.10",
+      "memori": "3.3.2",
+      "psycopg": "3.3.3",
+      "s3fs": "not-installed"
+    }
+  }
+}

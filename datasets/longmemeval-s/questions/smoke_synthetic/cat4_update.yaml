@@ -1,0 +1,122 @@
+- id: longmemeval-update-001
+  category: knowledge_update
+  hops: 1
+  question: What city does the user currently live in?
+  ground_truth:
+    answer: Manila
+    supporting_session_ids: [session_07]
+    fact_versions:
+      - value: Tokyo
+        valid_at: "2024-06-01"
+        invalid_at: "2025-10-01"
+        source_session_id: session_03
+      - value: Manila
+        valid_at: "2025-10-01"
+        source_session_id: session_07
+  constraints:
+    must_mention: [Manila]
+    must_not_claim: [Tokyo]
+    abstention_expected: false
+    max_tokens: 80
+
+- id: longmemeval-update-002
+  category: knowledge_update
+  hops: 1
+  question: What is the user's current job title?
+  ground_truth:
+    answer: Senior software engineer
+    supporting_session_ids: [session_08]
+    fact_versions:
+      - value: software engineer
+        valid_at: "2025-02-01"
+        invalid_at: "2026-01-01"
+        source_session_id: session_03
+      - value: senior software engineer
+        valid_at: "2026-01-01"
+        source_session_id: session_08
+  constraints:
+    must_mention: [senior]
+    abstention_expected: false
+    max_tokens: 100
+
+- id: longmemeval-update-003
+  category: knowledge_update
+  hops: 1
+  question: What programming language does the user currently prefer?
+  ground_truth:
+    answer: Rust
+    supporting_session_ids: [session_10]
+    fact_versions:
+      - value: Python
+        valid_at: "2025-08-01"
+        invalid_at: "2026-02-01"
+        source_session_id: session_05
+      - value: Rust
+        valid_at: "2026-02-01"
+        source_session_id: session_10
+  constraints:
+    must_mention: [Rust]
+    must_not_claim: [Python]
+    abstention_expected: false
+    max_tokens: 80
+
+- id: longmemeval-update-004
+  category: knowledge_update
+  hops: 1
+  question: What kind of bike does the user currently ride?
+  ground_truth:
+    answer: A gravel bike
+    supporting_session_ids: [session_11]
+    fact_versions:
+      - value: mountain bike
+        valid_at: "2024-07-01"
+        invalid_at: "2026-03-01"
+        source_session_id: session_04
+      - value: gravel bike
+        valid_at: "2026-03-01"
+        source_session_id: session_11
+  constraints:
+    must_mention: [gravel]
+    abstention_expected: false
+    max_tokens: 80
+
+- id: longmemeval-update-005
+  category: knowledge_update
+  hops: 1
+  question: Who is the user's current employer?
+  ground_truth:
+    answer: PaynamX
+    supporting_session_ids: [session_12]
+    fact_versions:
+      - value: AcmeFin
+        valid_at: "2025-02-01"
+        invalid_at: "2026-04-01"
+        source_session_id: session_03
+      - value: PaynamX
+        valid_at: "2026-04-01"
+        source_session_id: session_12
+  constraints:
+    must_mention: [PaynamX]
+    must_not_claim: [AcmeFin]
+    abstention_expected: false
+    max_tokens: 80
+
+- id: longmemeval-update-006
+  category: knowledge_update
+  hops: 1
+  question: What is the user's current weekend hobby?
+  ground_truth:
+    answer: Indoor climbing
+    supporting_session_ids: [session_13]
+    fact_versions:
+      - value: mountain biking
+        valid_at: "2026-03-15"
+        invalid_at: "2026-04-15"
+        source_session_id: session_04
+      - value: indoor climbing
+        valid_at: "2026-04-15"
+        source_session_id: session_13
+  constraints:
+    must_mention: [climbing]
+    abstention_expected: false
+    max_tokens: 80

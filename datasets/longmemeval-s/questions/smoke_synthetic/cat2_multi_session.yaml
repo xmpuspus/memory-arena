@@ -1,0 +1,74 @@
+- id: longmemeval-multi-001
+  category: multi_session_reasoning
+  hops: 2
+  question: Given the user's job and city, what is their commute likely like?
+  ground_truth:
+    answer: Software engineer in Manila, likely commutes via car or rideshare given local traffic.
+    supporting_session_ids: [session_03, session_07]
+    supporting_turn_ids: [session_03_turn_012, session_07_turn_002]
+  constraints:
+    must_mention: [Manila]
+    abstention_expected: false
+    max_tokens: 200
+
+- id: longmemeval-multi-002
+  category: multi_session_reasoning
+  hops: 2
+  question: How might the user combine their fintech work with their interest in machine learning?
+  ground_truth:
+    answer: Building fraud detection pipelines using transformer embeddings.
+    supporting_session_ids: [session_03, session_06]
+    supporting_turn_ids: [session_03_turn_012, session_06_turn_004]
+  constraints:
+    must_mention: [fraud detection]
+    abstention_expected: false
+    max_tokens: 200
+
+- id: longmemeval-multi-003
+  category: multi_session_reasoning
+  hops: 2
+  question: Would a vegan restaurant suit the user, given their stated preferences?
+  ground_truth:
+    answer: Not strictly. The user is pescatarian and eats fish.
+    supporting_session_ids: [session_09]
+    supporting_turn_ids: [session_09_turn_003]
+  constraints:
+    must_mention: [pescatarian]
+    must_not_claim: [vegan]
+    abstention_expected: false
+    max_tokens: 150
+
+- id: longmemeval-multi-004
+  category: multi_session_reasoning
+  hops: 3
+  question: What weekend activity in Manila might the user enjoy that aligns with their hobbies and dietary preferences?
+  ground_truth:
+    answer: A trip to Antipolo for mountain biking followed by a seafood lunch.
+    supporting_session_ids: [session_04, session_07, session_09]
+  constraints:
+    must_mention: [biking]
+    abstention_expected: false
+    max_tokens: 200
+
+- id: longmemeval-multi-005
+  category: multi_session_reasoning
+  hops: 2
+  question: How does the user's choice of programming language relate to their work?
+  ground_truth:
+    answer: They prefer Python which is widely used in fintech and machine learning.
+    supporting_session_ids: [session_03, session_05]
+  constraints:
+    must_mention: [Python]
+    abstention_expected: false
+    max_tokens: 150
+
+- id: longmemeval-multi-006
+  category: multi_session_reasoning
+  hops: 2
+  question: Given the user is a software engineer who likes biking, what gift would they appreciate?
+  ground_truth:
+    answer: A bike GPS computer or a coding-themed jersey.
+    supporting_session_ids: [session_03, session_04]
+  constraints:
+    abstention_expected: false
+    max_tokens: 150

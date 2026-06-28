@@ -1,0 +1,78 @@
+- id: longmemeval-temporal-001
+  category: temporal
+  hops: 1
+  question: When did the user first mention they enjoy mountain biking?
+  ground_truth:
+    answer: In session_04 dated 2026-03-15.
+    supporting_session_ids: [session_04]
+    supporting_turn_ids: [session_04_turn_006]
+    valid_as_of: "2026-03-15"
+  constraints:
+    must_mention: ["2026"]
+    abstention_expected: false
+    max_tokens: 120
+
+- id: longmemeval-temporal-002
+  category: temporal
+  hops: 1
+  question: When did the user start working at the fintech startup?
+  ground_truth:
+    answer: They mentioned starting in February 2025.
+    supporting_session_ids: [session_03]
+    valid_as_of: "2025-02-01"
+  constraints:
+    must_mention: ["2025"]
+    abstention_expected: false
+    max_tokens: 120
+
+- id: longmemeval-temporal-003
+  category: temporal
+  hops: 1
+  question: How long ago did the user move to Manila?
+  ground_truth:
+    answer: About six months ago, in October 2025.
+    supporting_session_ids: [session_07]
+    valid_as_of: "2025-10-01"
+  constraints:
+    must_mention: ["2025"]
+    abstention_expected: false
+    max_tokens: 120
+
+- id: longmemeval-temporal-004
+  category: temporal
+  hops: 2
+  question: In which session did the user describe their fraud detection work?
+  ground_truth:
+    answer: Session_06 on 2026-03-22.
+    supporting_session_ids: [session_06]
+    valid_as_of: "2026-03-22"
+  constraints:
+    must_mention: ["2026"]
+    abstention_expected: false
+    max_tokens: 120
+
+- id: longmemeval-temporal-005
+  category: temporal
+  hops: 1
+  question: When did the user buy their current bike?
+  ground_truth:
+    answer: In summer 2024.
+    supporting_session_ids: [session_04]
+    valid_as_of: "2024-07-01"
+  constraints:
+    must_mention: ["2024"]
+    abstention_expected: false
+    max_tokens: 100
+
+- id: longmemeval-temporal-006
+  category: temporal
+  hops: 1
+  question: When did the user adopt a pescatarian diet?
+  ground_truth:
+    answer: Two years ago, in 2024.
+    supporting_session_ids: [session_09]
+    valid_as_of: "2024-01-01"
+  constraints:
+    must_mention: ["2024"]
+    abstention_expected: false
+    max_tokens: 100

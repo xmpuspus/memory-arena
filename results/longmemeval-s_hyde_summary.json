@@ -1,0 +1,106 @@
+{
+  "strategy": "hyde",
+  "corpus": "longmemeval-s",
+  "status": "ok",
+  "n_seeds": 3,
+  "n_questions": 16,
+  "n_bootstrap": 5000,
+  "bootstrap_method": "non_parametric_question_level",
+  "mean_accuracy": 0.42541666666666667,
+  "ci_low_95": 0.26103645833333333,
+  "ci_high_95": 0.6014635416666666,
+  "accuracy": 0.42541666666666667,
+  "accuracy_ci": 0.17021354166666663,
+  "ci_low": 0.26103645833333333,
+  "ci_high": 0.6014635416666666,
+  "accuracy_per_seed": [
+    0.439375,
+    0.4103125,
+    0.4265625
+  ],
+  "total_cost_usd": 0.22263100000000002,
+  "total_cost_ci": 0.002552221057510542,
+  "avg_recall_latency_ms": 10652.176009549294,
+  "avg_recall_latency_ci_ms": 248.2280301929193,
+  "mean_session_recall_at_k": 0.7847222222222223,
+  "mean_session_recall_at_k_ci": 0.0272222222222222,
+  "mean_session_hit_at_k": 0.8958333333333334,
+  "mean_session_hit_at_k_ci": 0.04083333333333333,
+  "ingest_failure_rate": 0.0,
+  "questions_evaluated_per_seed": [
+    16,
+    16,
+    16
+  ],
+  "accuracy_by_category": {
+    "information_extraction": {
+      "accuracy": 0.5441666666666667,
+      "accuracy_ci": 0.4558333333333333,
+      "ci_low_95": 0.08833333333333333,
+      "ci_high_95": 1.0,
+      "n": 4
+    },
+    "multi_session_reasoning": {
+      "accuracy": 0.3241666666666667,
+      "accuracy_ci": 0.13416666666666668,
+      "ci_low_95": 0.19,
+      "ci_high_95": 0.45833333333333337,
+      "n": 4
+    },
+    "temporal": {
+      "accuracy": 0.175,
+      "accuracy_ci": 0.17291666666666666,
+      "ci_low_95": 0.025,
+      "ci_high_95": 0.37083333333333335,
+      "n": 4
+    },
+    "knowledge_update": {
+      "accuracy": 0.6583333333333333,
+      "accuracy_ci": 0.2875,
+      "ci_low_95": 0.35000000000000003,
+      "ci_high_95": 0.9249999999999999,
+      "n": 4
+    }
+  },
+  "metadata": {
+    "commit_sha": "49c2d472238a2fe3a5fce6b7279eee3bf1af41c1",
+    "started_utc": "2026-04-30T04:20:03.788359+00:00",
+    "host": "Darwin 25.3.0 (arm64)",
+    "python": "3.12.4",
+    "top_k": 5,
+    "top_k_normalized": true,
+    "seed": 2,
+    "models": {
+      "anthropic_generate": "claude-sonnet-4-6",
+      "anthropic_fast": "claude-haiku-4-5-20251001",
+      "anthropic_judge": "claude-opus-4-7",
+      "openai_generate": "gpt-4o",
+      "openai_fast": "gpt-4o-mini",
+      "openai_judge": "gpt-4o",
+      "embedding": "text-embedding-3-large"
+    },
+    "package_versions": {
+      "memory-arena": "0.1.5",
+      "anthropic": "0.42.0",
+      "openai": "2.24.0",
+      "chromadb": "0.5.23",
+      "neo4j": "5.27.0",
+      "fastapi": "0.115.6",
+      "pydantic": "2.10.4",
+      "rank-bm25": "0.2.2",
+      "tiktoken": "0.7.0",
+      "tenacity": "9.0.0",
+      "numpy": "2.4.4",
+      "scikit-learn": "1.8.0",
+      "mem0ai": "0.1.114",
+      "letta-client": "1.10.3",
+      "graphiti-core": "0.13.0",
+      "cognee": "1.0.3",
+      "langmem": "0.0.30",
+      "langgraph": "1.1.10",
+      "memori": "3.3.2",
+      "psycopg": "3.3.3",
+      "s3fs": "not-installed"
+    }
+  }
+}

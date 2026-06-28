@@ -1,0 +1,214 @@
+cff-version: 1.2.0
+message: "If you use Memory Arena in research or a public writeup, please cite both this software and the underlying LongMemEval corpus."
+title: "Memory Arena: Apples-to-apples benchmark for agent-memory architectures"
+abstract: >-
+  Memory Arena benchmarks 21 agent-memory architectures (Mem0, Mem0+Graph,
+  Graphiti, Graphiti-on-FalkorDB, Cognee, LangMem, Memori, A-MEM, HippoRAG 2,
+  Karpathy LLM Wiki, the quantum rerankers QISS and SQR, plus pure-Python
+  baselines and advanced retrievers like HyDE, RAPTOR, Reflection, Persona
+  Profile, Hybrid RRF) on the same chat-session corpus, scored by the same
+  evaluator, under the same configs.
+authors:
+  - family-names: Puspus
+    given-names: Xavier
+    email: xpuspus@gmail.com
+license: MIT
+repository-code: "https://github.com/xmpuspus/memory-arena"
+url: "https://github.com/xmpuspus/memory-arena"
+type: software
+keywords:
+  - agent-memory
+  - llm-evaluation
+  - benchmark
+  - longmemeval
+  - mem0
+  - graphiti
+  - cognee
+  - langmem
+  - rag
+  - vector-database
+version: 0.1.7
+date-released: 2026-06-22
+preferred-citation:
+  type: software
+  authors:
+    - family-names: Puspus
+      given-names: Xavier
+  title: "Memory Arena: Apples-to-apples benchmark for agent-memory architectures"
+  year: 2026
+  url: "https://github.com/xmpuspus/memory-arena"
+references:
+  - type: conference-paper
+    title: "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+    authors:
+      - family-names: Wu
+        given-names: Di
+      - family-names: Wang
+        given-names: Hongwei
+      - family-names: Yu
+        given-names: Wenhao
+      - family-names: Zhang
+        given-names: Yuwei
+      - family-names: Chang
+        given-names: Kai-Wei
+      - family-names: Yu
+        given-names: Dong
+    conference:
+      name: International Conference on Learning Representations (ICLR)
+    year: 2025
+    url: "https://arxiv.org/abs/2410.10813"
+  - type: article
+    title: "Precise Zero-Shot Dense Retrieval without Relevance Labels"
+    authors:
+      - family-names: Gao
+        given-names: Luyu
+      - family-names: Ma
+        given-names: Xueguang
+      - family-names: Lin
+        given-names: Jimmy
+      - family-names: Callan
+        given-names: Jamie
+    year: 2023
+    url: "https://arxiv.org/abs/2212.10496"
+    notes: "HyDE: hypothetical document embeddings."
+  - type: conference-paper
+    title: "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval"
+    authors:
+      - family-names: Sarthi
+        given-names: Parth
+      - family-names: Abdullah
+        given-names: Salman
+      - family-names: Tuli
+        given-names: Aditi
+      - family-names: Khanna
+        given-names: Shubh
+      - family-names: Goldie
+        given-names: Anna
+      - family-names: Manning
+        given-names: Christopher D.
+    conference:
+      name: International Conference on Learning Representations (ICLR)
+    year: 2024
+    url: "https://arxiv.org/abs/2401.18059"
+  - type: conference-paper
+    title: "Generative Agents: Interactive Simulacra of Human Behavior"
+    authors:
+      - family-names: Park
+        given-names: Joon Sung
+      - family-names: O'Brien
+        given-names: Joseph C.
+      - family-names: Cai
+        given-names: Carrie J.
+      - family-names: Morris
+        given-names: Meredith Ringel
+      - family-names: Liang
+        given-names: Percy
+      - family-names: Bernstein
+        given-names: Michael S.
+    conference:
+      name: ACM Symposium on User Interface Software and Technology (UIST)
+    year: 2023
+    url: "https://arxiv.org/abs/2304.03442"
+    notes: "Reflection memory pattern."
+  - type: article
+    title: "The Probabilistic Relevance Framework: BM25 and Beyond"
+    authors:
+      - family-names: Robertson
+        given-names: Stephen
+      - family-names: Zaragoza
+        given-names: Hugo
+    year: 2009
+    journal: "Foundations and Trends in Information Retrieval"
+    notes: "BM25 lexical retrieval baseline."
+  - type: conference-paper
+    title: "Reciprocal Rank Fusion outperforms Condorcet and Individual Rank Learning Methods"
+    authors:
+      - family-names: Cormack
+        given-names: Gordon V.
+      - family-names: Clarke
+        given-names: Charles L. A.
+      - family-names: Buettcher
+        given-names: Stefan
+    conference:
+      name: ACM SIGIR
+    year: 2009
+    notes: "RRF rank-fusion algorithm used by hybrid_rrf."
+  - type: software
+    title: "LLM Wiki: a markdown-page memory pattern"
+    authors:
+      - family-names: Karpathy
+        given-names: Andrej
+    year: 2024
+    url: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+  - type: software
+    title: "Mem0: Memory Layer for LLM Applications"
+    authors:
+      - name: "Mem0 Authors"
+    year: 2024
+    url: "https://github.com/mem0ai/mem0"
+  - type: software
+    title: "Graphiti: Temporal Knowledge Graphs for Agents"
+    authors:
+      - name: "Zep AI"
+    year: 2024
+    url: "https://github.com/getzep/graphiti"
+  - type: software
+    title: "Cognee: Memory for AI Agents"
+    authors:
+      - name: "Topoteretes"
+    year: 2024
+    url: "https://github.com/topoteretes/cognee"
+  - type: software
+    title: "LangMem: Long-term Memory for LangGraph Agents"
+    authors:
+      - name: "LangChain"
+    year: 2024
+    url: "https://github.com/langchain-ai/langmem"
+  - type: software
+    title: "Memori: SQL-Native Agent Memory"
+    authors:
+      - name: "GibsonAI"
+    year: 2024
+    url: "https://github.com/GibsonAI/memori"
+  - type: article
+    title: "A-MEM: Agentic Memory for LLM Agents"
+    authors:
+      - family-names: Xu
+        given-names: Wujiang
+      - family-names: Liang
+        given-names: Zujie
+      - family-names: Mei
+        given-names: Kai
+      - family-names: Gao
+        given-names: Hang
+      - family-names: Tan
+        given-names: Juntao
+      - family-names: Zhang
+        given-names: Yongfeng
+    year: 2025
+    url: "https://arxiv.org/abs/2502.12110"
+    notes: "Adapted for the amem strategy."
+  - type: article
+    title: "HippoRAG 2: Tightening Dense+Sparse Retrieval with Personalized PageRank for Episodic Memory"
+    authors:
+      - family-names: "Jiménez Gutiérrez"
+        given-names: "Bernal"
+      - family-names: "Sun"
+        given-names: "Huan"
+    year: 2025
+    url: "https://arxiv.org/abs/2502.14802"
+    notes: "Adapted for the hipporag2 strategy."
+  - type: article
+    title: "Quantum Fingerprinting"
+    authors:
+      - family-names: Buhrman
+        given-names: Harry
+      - family-names: Cleve
+        given-names: Richard
+      - family-names: Watrous
+        given-names: John
+      - family-names: de Wolf
+        given-names: Ronald
+    year: 2001
+    url: "https://arxiv.org/abs/quant-ph/0102001"
+    notes: "SWAP test for state overlap, used by the sqr strategy."

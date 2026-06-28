@@ -1,0 +1,94 @@
+services:
+  neo4j:
+    image: neo4j:5-community
+    ports:
+      # Bind loopback only — exposing 7474/7687 to all interfaces is the same
+      # security mistake that surfaced default-creds Neo4j to the public
+      # internet for years. NEO4J_PASSWORD must be set in .env (no default).
+      - "127.0.0.1:7474:7474"
+      - "127.0.0.1:7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/${MEM_ARENA_NEO4J_PASSWORD:?MEM_ARENA_NEO4J_PASSWORD must be set in .env}
+      - NEO4J_PLUGINS=["apoc"]
+    volumes:
+      - neo4j_data:/data
+      - ./cypher:/cypher
+    healthcheck:
+      test: ["CMD", "neo4j", "status"]
+      interval: 10s
+      retries: 5
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    ports:
+      # Host 5433 to avoid colliding with system Postgres on 5432. Container
+      # port stays 5432; clients on the docker network connect to
+      # postgres:5432.
+      - "127.0.0.1:${MEM_ARENA_POSTGRES_HOST_PORT:-5433}:5432"
+    environment:
+      - POSTGRES_USER=${MEM_ARENA_POSTGRES_USER:-memarena}
+      - POSTGRES_PASSWORD=${MEM_ARENA_POSTGRES_PASSWORD:-memarena}
+      - POSTGRES_DB=${MEM_ARENA_POSTGRES_DATABASE:-memarena}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/postgres-init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${MEM_ARENA_POSTGRES_USER:-memarena}"]
+      interval: 10s
+      retries: 5
+
+  falkordb:
+    image: falkordb/falkordb:latest
+    ports:
+      # Host 6381 to avoid colliding with other local redis containers on
+      # 6379/6380. Container port stays 6379 (Redis protocol). 3001 -> 3000 is
+      # the FalkorDB browser UI, remapped off Next.js's 3000.
+      - "127.0.0.1:6381:6379"
+      - "127.0.0.1:3001:3000"
+    volumes:
+      - falkordb_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      retries: 5
+
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      - MEM_ARENA_NEO4J_URI=bolt://neo4j:7687
+      - MEM_ARENA_NEO4J_USER=neo4j
+      - MEM_ARENA_NEO4J_PASSWORD=${MEM_ARENA_NEO4J_PASSWORD:?MEM_ARENA_NEO4J_PASSWORD must be set in .env}
+      - MEM_ARENA_CHROMA_PATH=/data/chroma
+      - MEM_ARENA_POSTGRES_HOST=postgres
+      - MEM_ARENA_ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - MEM_ARENA_OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    depends_on:
+      neo4j:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    volumes:
+      - chroma_data:/data/chroma
+      - ./datasets:/datasets
+      - ./results:/results
+    profiles:
+      - full
+
+  web:
+    build: ./web
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - api
+    profiles:
+      - full
+
+volumes:
+  neo4j_data:
+  postgres_data:
+  chroma_data:
+  falkordb_data:

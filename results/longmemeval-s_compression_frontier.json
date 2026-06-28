@@ -1,0 +1,206 @@
+{
+  "corpus": "longmemeval-s",
+  "n_questions": 16,
+  "methods": {
+    "full": {
+      "family": "full",
+      "bytes_per_vector": 12288,
+      "recall@5": 0.9375,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.8125,
+        "temporal": 0.9375,
+        "knowledge_update": 1.0
+      }
+    },
+    "matryoshka_1024": {
+      "family": "matryoshka",
+      "bytes_per_vector": 4096,
+      "recall@5": 0.9219,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.8125,
+        "temporal": 0.875,
+        "knowledge_update": 1.0
+      }
+    },
+    "matryoshka_512": {
+      "family": "matryoshka",
+      "bytes_per_vector": 2048,
+      "recall@5": 0.9219,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.8125,
+        "temporal": 0.875,
+        "knowledge_update": 1.0
+      }
+    },
+    "matryoshka_256": {
+      "family": "matryoshka",
+      "bytes_per_vector": 1024,
+      "recall@5": 0.875,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.8125,
+        "temporal": 0.6875,
+        "knowledge_update": 1.0
+      }
+    },
+    "matryoshka_128": {
+      "family": "matryoshka",
+      "bytes_per_vector": 512,
+      "recall@5": 0.8906,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.875,
+        "temporal": 0.6875,
+        "knowledge_update": 1.0
+      }
+    },
+    "matryoshka_64": {
+      "family": "matryoshka",
+      "bytes_per_vector": 256,
+      "recall@5": 0.7604,
+      "hit@5": 0.875,
+      "by_category": {
+        "information_extraction": 0.75,
+        "multi_session_reasoning": 0.6875,
+        "temporal": 0.6042,
+        "knowledge_update": 1.0
+      }
+    },
+    "pca_256": {
+      "family": "pca",
+      "bytes_per_vector": 1024,
+      "recall@5": 0.9219,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.8125,
+        "temporal": 0.875,
+        "knowledge_update": 1.0
+      }
+    },
+    "pca_128": {
+      "family": "pca",
+      "bytes_per_vector": 512,
+      "recall@5": 0.8385,
+      "hit@5": 0.9375,
+      "by_category": {
+        "information_extraction": 0.75,
+        "multi_session_reasoning": 0.7292,
+        "temporal": 0.875,
+        "knowledge_update": 1.0
+      }
+    },
+    "pca_64": {
+      "family": "pca",
+      "bytes_per_vector": 256,
+      "recall@5": 0.8385,
+      "hit@5": 0.9375,
+      "by_category": {
+        "information_extraction": 0.75,
+        "multi_session_reasoning": 0.7292,
+        "temporal": 0.875,
+        "knowledge_update": 1.0
+      }
+    },
+    "pca_32": {
+      "family": "pca",
+      "bytes_per_vector": 128,
+      "recall@5": 0.7656,
+      "hit@5": 0.8125,
+      "by_category": {
+        "information_extraction": 0.5,
+        "multi_session_reasoning": 0.75,
+        "temporal": 0.8125,
+        "knowledge_update": 1.0
+      }
+    },
+    "pca_16": {
+      "family": "pca",
+      "bytes_per_vector": 64,
+      "recall@5": 0.7656,
+      "hit@5": 0.8125,
+      "by_category": {
+        "information_extraction": 0.5,
+        "multi_session_reasoning": 0.75,
+        "temporal": 0.8125,
+        "knowledge_update": 1.0
+      }
+    },
+    "int8": {
+      "family": "quantized",
+      "bytes_per_vector": 3072,
+      "recall@5": 0.9375,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.8125,
+        "temporal": 0.9375,
+        "knowledge_update": 1.0
+      }
+    },
+    "binary": {
+      "family": "quantized",
+      "bytes_per_vector": 384,
+      "recall@5": 0.9375,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.8125,
+        "temporal": 0.9375,
+        "knowledge_update": 1.0
+      }
+    },
+    "binary_1024": {
+      "family": "matryoshka+binary",
+      "bytes_per_vector": 128,
+      "recall@5": 0.9375,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.8125,
+        "temporal": 0.9375,
+        "knowledge_update": 1.0
+      }
+    },
+    "binary_512": {
+      "family": "matryoshka+binary",
+      "bytes_per_vector": 64,
+      "recall@5": 0.9219,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.8125,
+        "temporal": 0.875,
+        "knowledge_update": 1.0
+      }
+    },
+    "binary_256": {
+      "family": "matryoshka+binary",
+      "bytes_per_vector": 32,
+      "recall@5": 0.849,
+      "hit@5": 1.0,
+      "by_category": {
+        "information_extraction": 1.0,
+        "multi_session_reasoning": 0.7292,
+        "temporal": 0.6667,
+        "knowledge_update": 1.0
+      }
+    },
+    "quantum_pca16_swap": {
+      "family": "quantum",
+      "bytes_per_vector": 64,
+      "recall@5": 0.7656,
+      "hit@5": 0.8125,
+      "swap_equals_pca16_topk": true,
+      "note": "SWAP-test fidelity == cos^2 on PCA-16, so ranking == pca_16"
+    }
+  }
+}

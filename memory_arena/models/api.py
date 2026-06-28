@@ -1,0 +1,61 @@
+"""API request/response models for the chatbot and benchmark endpoints."""
+
+from __future__ import annotations
+
+from typing import Literal
+
+from pydantic import BaseModel, Field, field_validator
+
+from memory_arena.models.graph import GraphContext
+
+
+class Message(BaseModel):
+    """A single chat message."""
+
+    role: Literal["user", "assistant"]
+    content: str
+
+
+class ChatRequest(BaseModel):
+    """Request body for /chat endpoint."""
+
+    query: str
+    strategy: str = "naive_vector"
+    history: list[Message] = Field(default_factory=list)
+    corpus: str = "longmemeval-s"
+
+    @field_validator("corpus")
+    @classmethod
+    def validate_corpus(cls, v: str) -> str:
+        import re
+
+        if not re.match(r"^[a-zA-Z0-9_-]+$", v):
+            raise ValueError(
+                "Invalid corpus name: must contain only letters, digits, hyphens, underscores"
+            )
+        return v
+
+
+class ChatResponse(BaseModel):
+    """Non-streaming response for /chat endpoint."""
+
+    answer: str
+    strategy_used: str
+    sources: list[str] = Field(default_factory=list)
+    graph_context: GraphContext | None = None
+    latency_ms: float = 0.0
+    tokens_used: int = 0
+    cost_usd: float = 0.0
+
+
+class ErrorDetail(BaseModel):
+    """Structured error detail."""
+
+    code: str
+    message: str
+
+
+class ErrorResponse(BaseModel):
+    """Consistent error envelope (paper-trail-ph pattern)."""
+
+    error: ErrorDetail

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "memory_arena"
+version = "0.0.1"
+description = "Did you mean memory-arena (with hyphen)? https://github.com/xmpuspus/memory-arena"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Xavier Puspus" }]
+keywords = ["memory-arena", "redirect"]
+
+[project.urls]
+Homepage = "https://github.com/xmpuspus/memory-arena"
+
+[tool.hatch.build.targets.wheel]
+packages = ["memory_arena"]

@@ -1,0 +1,38 @@
+# Memory Arena dashboard tour — declarative flow used by /record-demo.
+#
+# Re-run with: python scripts/record_dashboard_tour.py
+# Outputs:    docs/dashboard-tour.gif (README-embeddable, target <10MB)
+#             docs/dashboard-tour.mp4 (LinkedIn-ready, ~50s, 1280x720)
+
+base_url: http://127.0.0.1:8765
+viewport: {width: 1280, height: 720}
+
+output: docs/dashboard-tour.gif
+max_size_mb: 10
+headless: true
+
+steps:
+  - page: /
+    wait: networkidle
+    duration: 8s
+    scroll:
+      distance: 600
+      speed: smooth
+
+  - page: /benchmark/
+    wait: networkidle
+    duration: 14s
+    scroll:
+      distance: 400
+      speed: smooth
+
+  - page: /recall-lab/
+    wait: networkidle
+    duration: 12s
+    scroll:
+      distance: 500
+      speed: smooth
+
+  - page: /benchmark/
+    wait: networkidle
+    duration: 8s
