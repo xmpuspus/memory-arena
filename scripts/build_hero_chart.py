@@ -125,9 +125,10 @@ def load_summaries(corpus: str = "longmemeval-s") -> list[dict]:
 def build_chart() -> Path:
     summaries = load_summaries()
     # All benchmarked strategies are shown for transparency, quantum included.
-    # qiss lands on top of naive_vector (it IS naive_vector: cos^2 can't reorder
-    # cosine) and sqr trails; the caption says so, so the purple stars read as
-    # "no quantum advantage" rather than a win. The dedicated charts
+    # qiss lands near naive_vector (it reranks the same pool by cos^2, reorders
+    # retrieval a little but stays within noise) and sqr trails; the caption
+    # says so, so the purple stars read as "no quantum advantage" rather than a
+    # win. The dedicated charts
     # (docs/quantum_experiments.png, docs/compression_frontier.png) carry the why.
     if not summaries:
         raise SystemExit(

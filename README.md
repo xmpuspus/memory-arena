@@ -36,7 +36,7 @@
   <img src="docs/hero.png" alt="Pareto frontier, accuracy vs cost across the agent-memory strategies">
 </p>
 
-<p align="center"><sub><b>The cost view.</b> Accuracy vs cost (log scale). The cheap pure-Python retrievers (navy) own the frontier; the vendor SDKs (coral) and full_context (grey) are <i>both</i> worse and no cheaper once you count their internal calls. <i>qiss lands on naive_vector because it <b>is</b> naive_vector (cosine fidelity can't reorder cosine); sqr trails. Why, in [`docs/quantum-and-compression.md`](docs/quantum-and-compression.md).</i></sub></p>
+<p align="center"><sub><b>The cost view.</b> Accuracy vs cost (log scale). The cheap pure-Python retrievers (navy) own the frontier; the vendor SDKs (coral) and full_context (grey) are <i>both</i> worse and no cheaper once you count their internal calls. <i>qiss lands next to naive_vector: it reranks the same candidates by cosine-squared fidelity, which reorders retrieval a little but doesn't move accuracy past noise; sqr trails. Why, in [`docs/quantum-and-compression.md`](docs/quantum-and-compression.md).</i></sub></p>
 
 <p align="center">
   <img src="docs/taxonomy.png" alt="Agent-memory taxonomy, write-time vs read-time computation × storage representation">
@@ -46,7 +46,7 @@
 
 ## Rule of thumb: which agent memory should you use?
 
-**Start with a plain vector store. Spend your effort on how the model reasons over what it retrieves, not on a fancier index. Add a graph only when the work is genuinely multi-hop. The expensive SDKs don't beat the free baseline.**
+**Start with a plain vector store. Spend your effort on how the model reasons over what it retrieves, not on a fancier index. Reach for a graph only when plain vectors actually fail, which here was time-aware questions. The expensive SDKs don't beat the free baseline.**
 
 <p align="center">
   <img src="docs/reasoning-gap.png" alt="Per strategy: an accuracy bar and a recall@5 marker. Every top retriever finds the right memory 80-92% of the time but answers correctly only about half; the gap is reasoning, not retrieval">
@@ -56,7 +56,7 @@
 
 1. **Default to a plain vector store** (embed each turn, top-k cosine, ~30 lines). It beat every funded SDK here and costs almost nothing.
 2. **Fix the reasoning, not the retrieval.** The right memory gets found 85-92% of the time; the model uses it correctly only ~half the time. A better answer prompt beats a fancier retriever.
-3. **Reach for a knowledge graph only for multi-hop work.** A from-scratch HippoRAG 2 was the one thing that beat the vector baseline, on multi-session reasoning, at ~10x the cost.
+3. **Reach for a graph only where plain vectors actually fail: temporal questions.** On time-aware "when did X happen" queries every vector method collapsed (4-15%) and a from-scratch HippoRAG 2 recovered about half (~60%, consistent across seeds, at ~10x the cost). On multi-session reasoning the vector store actually won (75% vs 58%), so "graphs for multi-hop" is a theory this 16-question corpus can't confirm; v0.2 will.
 4. **Pay a vendor SDK for managed infra, not accuracy.** On the same model, Mem0 / Graphiti / Cognee / LangMem didn't beat the free baseline. The convenience (extraction, updates, hosting) is real; the accuracy bump isn't.
 5. **Never just stuff the whole conversation into context.** `full_context` is the worst trade on the board: most expensive, and lower accuracy than a cheap retriever.
 
@@ -70,7 +70,7 @@ Full decision tree and per-use-case matrix in [`docs/decision-guide.md`](docs/de
 2. **Pure-Python advanced retrievers don't separate from the simple vector store.** `hybrid_rrf` (~44%), `hyde` (~43%), `raptor` (~47%), and `reflection` (~47%) are all within ±5pp of plain `naive_vector` despite costing 1.5-8x more per run. At this sample size these are noise; worth re-checking on the full 500-question corpus.
 3. **The "I'll just stuff the whole conversation in" baseline is dead.** `full_context` scores 29.5% at $5.16/run; every retrieval strategy beats it for 1-50% of the cost. Long-context isn't a substitute for retrieval, even when the model can hold it.
 4. **Graph-shaped vendors (graphiti, cognee, karpathy_llm_wiki) underperform on this slice.** Both temporal-graph vendors land at ~23% and the LLM-maintained wiki at ~22%; about half of `naive_vector`. **This is a measurement boundary, not a verdict.** The smoke corpus contains only 4 multi-session-reasoning questions out of 16; graph approaches earn their write-time cost on multi-hop synthesis the v0.2 full corpus (500 questions, ~125 multi-session) will exercise. The graph-vs-vector head-to-head you actually want is in v0.2; treat the smoke numbers for graph systems as a lower bound on what the architecture can do.
-5. **The quantum rerankers land exactly where the math predicts, no advantage hiding.** `qiss` (quantum-inspired, pure NumPy) reranks `naive_vector`'s candidates by cosine-squared state fidelity; its single-query ordering equals `naive_vector`'s by construction, so its 50.5% (3-seed mean, 95% CI overlapping the whole top tier) is statistically tied with `naive_vector`'s 49.2%, and its Recall@5 matches `naive_vector`'s within retrieval noise. `sqr` (a real SWAP-test circuit on the Qiskit Aer simulator) drops to 40.4%: amplitude-encoding forces a PCA squeeze of 3072-d embeddings into a 16-amplitude 4-qubit register, which keeps only **36% of the variance** (measured, `results/longmemeval-s_quantum_diagnostics.json`), and the reranker eats that loss. The honest read: simulated quantum machinery buys nothing over the closed-form cosine on this task; the interesting number is the dimensionality-reduction tax, not a quantum win.
+5. **The quantum rerankers don't beat the closed-form baseline.** `qiss` (quantum-inspired, pure NumPy) reranks `naive_vector`'s candidate pool by cosine-squared state fidelity. It *does* reorder retrieval (its top-5 differs from `naive_vector`'s on about one question per seed, so Recall@5 is 84.9% vs 87.0%), but the reordering doesn't help: 50.5% (3-seed mean, 95% CI overlapping the whole top tier) is statistically tied with `naive_vector`'s 49.2%. `sqr` (a real SWAP-test circuit on the Qiskit Aer simulator) drops to 40.4%: amplitude-encoding forces a PCA squeeze of 3072-d embeddings into a 16-amplitude 4-qubit register, which keeps only **36% of the variance** (measured, `results/longmemeval-s_quantum_diagnostics.json`), and the reranker eats that loss. The honest read: simulated quantum machinery buys nothing over the closed-form cosine on this task; the interesting number is the dimensionality-reduction tax, not a quantum win.
 6. **Retrieval is mostly solved; reasoning over the retrieved memory is the bottleneck.** Across six top-tier strategies, recall@5 is 85-92% while accuracy is only 47-51%. Restricting to just the questions where the correct session *was* retrieved barely moves accuracy (~48-54% mean), and they still score below half marks on roughly half of those questions. The hard part isn't finding the memory, it's answering correctly once you hold it. (`hipporag2` is the exception that proves it: same recall (~85%), but 63% accuracy on the perfect-recall subset, the best at *using* what it retrieves. N=16, so directional; computed from the per-question `recall_records` in `results/`.)
 
 <p align="center">
@@ -85,7 +85,7 @@ Full decision tree and per-use-case matrix in [`docs/decision-guide.md`](docs/de
 - **Not "the top tier is equivalent."** N=16 makes 95% CIs wide; we report a statistical *tie* at this sample size, not equivalence. The full LongMemEval-S (500 questions) ships in v0.2 with CIs tight enough to rank within tier 1.
 - **Not "graph memory is dead."** `graphiti` and `cognee` score lower than vector retrievers on this slice. The smoke subset has 4 multi-session-reasoning questions; graph approaches need many more to demonstrate their advantage. The full LongMemEval-S (500 questions, ~125 multi-session) and LongMemEval-M (multi-hop heavy) ship in v0.2.
 - **Not "every vendor is on the same model."** `mem0` and `langmem` now extract on Claude Sonnet, leveled to the harness (see the [methodology note](#methodology-note-leveling-mem0s-generator)). `graphiti` and `cognee` can't be cleanly leveled in one environment (graphiti-core 0.13 ships no Anthropic client, and 0.17, which does, is a version confound; cognee 1.0.3 needs a newer starlette than the pinned fastapi allows), so they run vendor-default (gpt-4o / gpt-4o-mini). Read those two rows as vendor-default, not model-controlled; both sit ~26pp below the top tier regardless of model.
-- **Not "a single judge is bias-free."** Opus 4.7 grades every answer, but 19 of the 20 strategies were re-graded by **GPT-4o** and the ranking holds: **Spearman rho = +0.967** ([`results/cross_judge_report.json`](results/cross_judge_report.json)). GPT-4o runs ~10-25pp more lenient in absolute terms but agrees on order, and independently ranks every vendor SDK below the pure-Python tier (sqr's results lack a seed suffix, so the seed-based re-grade skips it). See Zheng et al. (NeurIPS 2024, [arXiv:2306.05685](https://arxiv.org/abs/2306.05685)) for the judge-bias framework.
+- **Not "a single judge is bias-free."** Opus 4.7 grades every answer, but 19 of the 20 strategies were re-graded by **GPT-4o** and the ranking holds: **Spearman rho = +0.967** ([`results/cross_judge_report.json`](results/cross_judge_report.json)). GPT-4o runs ~10-25pp more lenient in absolute terms but agrees on order, and independently ranks every vendor SDK below the pure-Python tier (sqr's results lack a seed suffix, so the seed-based re-grade skips it). See Zheng et al. (NeurIPS 2023, [arXiv:2306.05685](https://arxiv.org/abs/2306.05685)) for the judge-bias framework.
 - **Not "the configurations are tuned."** They are documented vendor defaults plus the deviations listed in [Configurations](#configurations) below.
 - **Not "this generalizes to all memory workloads."** Chat sessions are one slice; tool-use traces, codebases, and long documents are not in scope.
 - **Not "rank N vs N+1 is meaningful at the smoke scale."** With 20 benchmarked strategies pairwise-compared on 7 metrics, family-wise error rates require Benjamini-Hochberg correction (queued for v0.2 alongside the paired bootstrap). Treat within-tier ranks as unordered.
@@ -189,7 +189,7 @@ the deprecated v1 + gpt-4o-mini, and graph memory is already covered by
   ranks (see
   [`results/cross_judge_report.json`](results/cross_judge_report.json));
   GPT-4o grades higher in absolute terms but agrees on order. The
-  framework for quantifying judge bias is Zheng et al. (NeurIPS 2024,
+  framework for quantifying judge bias is Zheng et al. (NeurIPS 2023,
   [arXiv:2306.05685](https://arxiv.org/abs/2306.05685)).
 - **Reproducibility.** Every per-seed result file under `results/`
   carries a `metadata` block with `commit_sha`, `seed`,
@@ -227,8 +227,9 @@ held constant across all strategies.
 > **Read this first.** N=16 yields a median 95% bootstrap CI half-width
 > of ~18 pp on accuracy, so the top tier is a wide statistical tie.
 > `hipporag2` posts the top point estimate (54.5%, 3 seeds) but its
-> CI overlaps `qiss`, `persona_profile`, `naive_vector`, `reflection`,
-> and `raptor`, all pure-Python. Every vendor SDK sits below this tier.
+> three seeds alone swing 49-62%, and its CI overlaps `qiss`,
+> `persona_profile`, `naive_vector`, `reflection`, and `raptor`, all
+> pure-Python. Every vendor SDK sits below this tier.
 > Treat the leaderboard as "tier 1 is a ~47-55% pure-Python tie; clear
 > gap to bm25; vendors below; floor at recency_window."
 > Cross-judge sanity check: re-grading 19 of the 20 strategies with
@@ -603,7 +604,7 @@ work. The full machine-readable list is in
   The chat-session corpus and 4-category question taxonomy used here.
 - **LLM-as-judge methodology + bias.** Zheng, Chiang, Sheng, Wu, Zhuang,
   Lin, Li, Li, Xing, Zhang, Gonzalez, Stoica. "Judging LLM-as-a-Judge
-  with MT-Bench and Chatbot Arena." NeurIPS 2024.
+  with MT-Bench and Chatbot Arena." NeurIPS 2023.
   [arXiv:2306.05685](https://arxiv.org/abs/2306.05685).
   Framework for quantifying judge bias; cited when interpreting the
   Opus 4.7 single-judge floor.

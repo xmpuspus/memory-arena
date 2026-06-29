@@ -18,9 +18,10 @@ On LongMemEval-S (16 questions, 4 categories, top_k=5):
 
 All three figures are 3-seed bootstrap means except `sqr` (single seed). `qiss`
 ties `naive_vector`: both 3-seed means sit inside a 95% CI of roughly [33%, 68%]
-at this N, and `qiss` retrieves the same documents by construction, so its
-Recall@5 matches `naive_vector` within retrieval noise. `sqr` is worse. Neither
-beats the baseline.
+at this N. `qiss` reranks `naive_vector`'s candidate pool by cosine-squared
+fidelity, so it does reorder retrieval (its top-5 differs on about one question
+per seed, Recall@5 0.85 vs 0.87), but the reordering doesn't change the verdict.
+`sqr` is worse. Neither beats the baseline.
 
 ![sqr recovers retrieval as qubits rise but never beats cosine](quantum_experiments.png)
 
