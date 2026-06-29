@@ -24,13 +24,25 @@ jobs:
       - name: user-facing typography lint
         run: python scripts/check_user_facing_typography.py
 
-      # pip-audit: fail on known CVEs in installed deps. Non-blocking initially
-      # so first-pass findings surface without blocking launch.
+      # pip-audit: scan deps for known CVEs. The currently-known findings are all
+      # in pinned transitive deps (8 in starlette, capped <0.42 by
+      # fastapi==0.115.6) plus the pytest dev tool. Clearing them needs a
+      # coordinated fastapi/starlette bump that cascades through the documented
+      # version constraints, tracked for the next dependency pass. They are
+      # accepted by ID below so a NEW, unknown CVE still surfaces. Non-blocking.
       - name: pip-audit (CVE scan)
         continue-on-error: true
         run: |
           pip install pip-audit
-          pip-audit --strict
+          pip-audit --strict --skip-editable \
+            --ignore-vuln CVE-2025-71176 \
+            --ignore-vuln PYSEC-2026-161 \
+            --ignore-vuln PYSEC-2026-249 \
+            --ignore-vuln PYSEC-2026-248 \
+            --ignore-vuln CVE-2025-54121 \
+            --ignore-vuln CVE-2025-62727 \
+            --ignore-vuln CVE-2026-48818 \
+            --ignore-vuln CVE-2026-48817
 
       # bandit: static analysis of memory_arena/ at medium-severity floor.
       # Non-blocking initially to surface findings without blocking launch.

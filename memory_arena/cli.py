@@ -123,7 +123,7 @@ def download_longmemeval(
     out.parent.mkdir(parents=True, exist_ok=True)
     console.print(f"Downloading {url} -> {out}")
     try:
-        urllib.request.urlretrieve(url, out)
+        urllib.request.urlretrieve(url, out)  # nosec B310 - trusted dataset URL
     except Exception as exc:
         console.print(f"[red]Download failed: {exc}[/red]")
         raise typer.Exit(1) from exc
@@ -334,7 +334,7 @@ def _pick_free_port(start: int, host: str = "127.0.0.1", span: int = 20) -> int:
 
 
 def _warn_if_lan_bind(host: str) -> None:
-    if host == "0.0.0.0":
+    if host == "0.0.0.0":  # nosec B104 - warning helper, not a real bind
         console.print(
             "[yellow]binding 0.0.0.0 — dashboard reachable from your local network. "
             "Use 127.0.0.1 if you don't want this.[/yellow]"
