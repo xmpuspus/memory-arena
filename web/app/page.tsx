@@ -113,7 +113,7 @@ export default function Home() {
             {
               step: "1",
               title: "Same corpus",
-              desc: "All 16 strategies ingest the LongMemEval-S sessions in the same order. Each is namespaced by run id so concurrent runs do not contaminate each other.",
+              desc: "All 20 strategies ingest the LongMemEval-S sessions in the same order. Each is namespaced by run id so concurrent runs do not contaminate each other.",
             },
             {
               step: "2",
@@ -150,13 +150,13 @@ export default function Home() {
 
       <section className="space-y-4">
         <h2 className="text-xl font-semibold" style={{ color: "var(--foreground)" }}>
-          The 16 strategies
+          The 20 strategies
         </h2>
         <p className="text-sm" style={{ color: "var(--muted)" }}>
-          Three baselines, seven advanced retrieval patterns (BM25, Hybrid RRF,
-          HyDE, Persona Profile, Reflection, RAPTOR, Karpathy&apos;s LLM Wiki),
-          and six vendor SDKs (Mem0, Mem0+Graph, Graphiti, Cognee, LangMem,
-          Memori).
+          Twelve pure-Python baselines and retrievers (vector, BM25, Hybrid RRF,
+          HyDE, Persona Profile, Reflection, RAPTOR, Karpathy&apos;s LLM Wiki,
+          A-MEM, HippoRAG 2), two quantum rerankers (QISS, SQR), and six vendor
+          SDKs (Mem0, Graphiti, Graphiti-on-FalkorDB, Cognee, LangMem, Memori).
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {STRATEGIES.map((s: Strategy) => (
@@ -172,7 +172,7 @@ export default function Home() {
 
       <section className="space-y-4">
         <h2 className="text-xl font-semibold" style={{ color: "var(--foreground)" }}>
-          The 5 question categories
+          The 4 question categories
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {CATEGORIES.map((c) => (

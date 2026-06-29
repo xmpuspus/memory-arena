@@ -27,8 +27,8 @@ keywords:
   - langmem
   - rag
   - vector-database
-version: 0.1.7
-date-released: 2026-06-22
+version: 0.1.8
+date-released: 2026-06-28
 preferred-citation:
   type: software
   authors:

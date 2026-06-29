@@ -593,7 +593,7 @@ work. The full machine-readable list is in
 - **LongMemEval corpus.** Wu, Wang, Yu, Zhang, Chang, Yu. "LongMemEval:
   Benchmarking Chat Assistants on Long-Term Interactive Memory." ICLR
   2025. [arXiv:2410.10813](https://arxiv.org/abs/2410.10813).
-  The chat-session corpus and 5-category question taxonomy used here.
+  The chat-session corpus and 4-category question taxonomy used here.
 - **LLM-as-judge methodology + bias.** Zheng, Chiang, Sheng, Wu, Zhuang,
   Lin, Li, Li, Xing, Zhang, Gonzalez, Stoica. "Judging LLM-as-a-Judge
   with MT-Bench and Chatbot Arena." NeurIPS 2024.

@@ -119,7 +119,6 @@ export const CATEGORIES = [
   "multi_session_reasoning",
   "temporal",
   "knowledge_update",
-  "abstention",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];
@@ -148,11 +147,6 @@ export const CATEGORY_INFO: Record<
     description:
       "User changed their mind across sessions. Test: does the system reflect the latest version, not an earlier one?",
   },
-  abstention: {
-    label: "Abstention",
-    description:
-      "Question has no answer in the chat history. Test: does the system correctly say 'I do not have that information'?",
-  },
 };
 
 export interface CorpusInfo {
@@ -162,7 +156,7 @@ export interface CorpusInfo {
 }
 
 export const DEFAULT_CORPORA: CorpusInfo[] = [
-  { name: "longmemeval-s", label: "LongMemEval-S", count: 30 },
+  { name: "longmemeval-s", label: "LongMemEval-S", count: 16 },
 ];
 
 export const CORPORA = DEFAULT_CORPORA;

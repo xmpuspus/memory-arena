@@ -4,7 +4,7 @@ Next.js 14 + Tailwind dashboard for Memory Arena. Static-exported and shipped in
 
 ## Pages
 
-- `/` - Home: 16 strategies and 5 question categories.
+- `/` - Home: 20 strategies and 4 question categories.
 - `/benchmark` - Per-strategy comparison table. Pulls real numbers from `/api/benchmark/{corpus}`.
 - `/recall-lab` - Per-question HIT/MISS drill-down for retrieval quality.
 
