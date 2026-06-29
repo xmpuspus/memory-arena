@@ -48,6 +48,12 @@
 
 **Start with a plain vector store. Spend your effort on how the model reasons over what it retrieves, not on a fancier index. Add a graph only when the work is genuinely multi-hop. The expensive SDKs don't beat the free baseline.**
 
+<p align="center">
+  <img src="docs/reasoning-gap.png" alt="Per strategy: an accuracy bar and a recall@5 marker. Every top retriever finds the right memory 80-92% of the time but answers correctly only about half; the gap is reasoning, not retrieval">
+</p>
+
+<p align="center"><sub><b>Why this is the rule.</b> Each bar is how often the answer is correct; each diamond is how often the right memory was actually retrieved (recall@5). Every top retriever <i>finds</i> the memory 80-92% of the time but <i>answers</i> correctly only about half. That gap is reasoning, not retrieval, which is why a 30-line vector store is enough and a fancier index or a funded SDK doesn't close it. <code>full_context</code> doesn't even retrieve (it stuffs the whole conversation) and costs the most.</sub></p>
+
 1. **Default to a plain vector store** (embed each turn, top-k cosine, ~30 lines). It beat every funded SDK here and costs almost nothing.
 2. **Fix the reasoning, not the retrieval.** The right memory gets found 85-92% of the time; the model uses it correctly only ~half the time. A better answer prompt beats a fancier retriever.
 3. **Reach for a knowledge graph only for multi-hop work.** A from-scratch HippoRAG 2 was the one thing that beat the vector baseline, on multi-session reasoning, at ~10x the cost.
@@ -476,6 +482,7 @@ files into `datasets/<your-corpus>/questions/smoke/`.
 - `scripts/cross_judge.py`, re-grade with GPT-4o, compute Spearman ρ vs Opus
 - `scripts/robustness.py`, gen × judge 2×2 sweep (v0.1.6 deliverable)
 - `scripts/build_showcase_chart.py`, regenerate `docs/showcase.png` (sorted-bar leaderboard hero)
+- `scripts/build_reasoning_gap_chart.py`, regenerate `docs/reasoning-gap.png` (recall@5 vs accuracy, the rule-of-thumb proof)
 - `web/`, Next.js 14 dashboard source (`cd web && npx next build && cp -R out/* ../memory_arena/static/`)
 - `tests/`: 362 tests, mock-based, no live API calls
 

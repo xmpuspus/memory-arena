@@ -130,6 +130,7 @@ include = [
     "SECURITY.md",
     "pyproject.toml",
     "docs/showcase.png",
+    "docs/reasoning-gap.png",
     "docs/hero.png",
 ]
 
