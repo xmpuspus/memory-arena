@@ -27,19 +27,19 @@
 > before quoting the numbers.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xmpuspus/memory-arena/main/docs/showcase.png" alt="20 agent-memory systems ranked by accuracy; every funded vendor SDK falls below a 30-line vector store">
+  <img src="docs/showcase.png" alt="20 agent-memory systems ranked by accuracy; every funded vendor SDK falls below a 30-line vector store">
 </p>
 
 <p align="center"><sub><b>20 systems, one eval.</b> Sorted by accuracy under the Opus judge. The funded vendor SDKs (coral) all land below `naive_vector`, a 30-line ChromaDB script; `mem0` and `langmem` run on the <i>same model</i> as the baselines, so it isn't a model handicap. Opus is a strict judge: GPT-4o grades these ~15pp higher with +0.967 rank agreement. Even the leader gets ~half right, memory is an open problem, not a shipped feature.</sub></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xmpuspus/memory-arena/main/docs/hero.png" alt="Pareto frontier, accuracy vs cost across the agent-memory strategies">
+  <img src="docs/hero.png" alt="Pareto frontier, accuracy vs cost across the agent-memory strategies">
 </p>
 
 <p align="center"><sub><b>The cost view.</b> Accuracy vs cost (log scale). The cheap pure-Python retrievers (navy) own the frontier; the vendor SDKs (coral) and full_context (grey) are <i>both</i> worse and no cheaper once you count their internal calls. <i>qiss lands on naive_vector because it <b>is</b> naive_vector (cosine fidelity can't reorder cosine); sqr trails. Why, in [`docs/quantum-and-compression.md`](docs/quantum-and-compression.md).</i></sub></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xmpuspus/memory-arena/main/docs/taxonomy.png" alt="Agent-memory taxonomy, write-time vs read-time computation × storage representation">
+  <img src="docs/taxonomy.png" alt="Agent-memory taxonomy, write-time vs read-time computation × storage representation">
 </p>
 
 <p align="center"><sub>The 20 strategies placed in one design space. <i>X-axis: when computation happens (read-time → write-time). Y-axis: representation (raw text → vectors → derived facts → graph).</i> The pattern: tier-1 accuracy spans the whole grid, no single quadrant wins.</sub></p>
@@ -68,7 +68,7 @@ Full decision tree and per-use-case matrix in [`docs/decision-guide.md`](docs/de
 6. **Retrieval is mostly solved; reasoning over the retrieved memory is the bottleneck.** Across six top-tier strategies, recall@5 is 85-92% while accuracy is only 47-51%. Restricting to just the questions where the correct session *was* retrieved barely moves accuracy (~48-54% mean), and they still score below half marks on roughly half of those questions. The hard part isn't finding the memory, it's answering correctly once you hold it. (`hipporag2` is the exception that proves it: same recall (~85%), but 63% accuracy on the perfect-recall subset, the best at *using* what it retrieves. N=16, so directional; computed from the per-question `recall_records` in `results/`.)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xmpuspus/memory-arena/main/docs/pairwise.png" alt="Pairwise significance heatmap, which strategy gaps are real?">
+  <img src="docs/pairwise.png" alt="Pairwise significance heatmap, which strategy gaps are real?">
 </p>
 
 <p align="center"><sub><b>Pairwise significance heatmap.</b> Read row "A" vs column "B": navy = A beats B with 95% bootstrap CI excluding 0; coral = B beats A; white = statistical tie. The white block in the upper-left is the "tier 1 is tied" claim, visually verified.</sub></p>
@@ -202,7 +202,7 @@ memory-arena demo
 The dashboard lives at `http://localhost:8000/`. Three pages: Home (20 strategy cards, 4 question categories evaluated), Benchmark (sortable table with 95% CIs + cost + latency), Recall Lab (per-question HIT/MISS drill-down).
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xmpuspus/memory-arena/main/docs/screenshot-benchmark.png" alt="Memory Arena dashboard: sortable benchmark leaderboard of all 20 strategies with accuracy, recall, cost, and latency">
+  <img src="docs/screenshot-benchmark.png" alt="Memory Arena dashboard: sortable benchmark leaderboard of all 20 strategies with accuracy, recall, cost, and latency">
 </p>
 
 <p align="center"><sub><i>The bundled dashboard's Benchmark page, sortable by any column. <code>memory-arena demo</code> serves it from the snapshot with no API keys. Also: <a href="docs/screenshot-home.png">home</a> (20 strategy cards) and <a href="docs/screenshot-recall-lab.png">recall lab</a> (per-question HIT/MISS).</i></sub></p>
